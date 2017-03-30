@@ -1,0 +1,18 @@
+<launch>
+
+
+
+<group ns="servobus/leftarm" >
+  <node pkg="rosserial_python" type="serial_node.py" name="servonode" respawn="true">
+      <param name="port" value="/dev/arduinoleftarm"/>
+    <param name="baud" value="115200"/>
+  </node>
+</group>
+
+<!--  <node pkg="rosserial_python" type="serial_node.py" name="servonode" respawn="true">
+   <param name="port" value="/dev/arduinorightarm"/>
+    <param name="baud" value="115200"/>
+  </node>
+</group>-->
+
+</launch>

@@ -1,0 +1,9 @@
+<launch>
+
+
+<node name="joy_teleop" pkg="teleop_twist_joy" type="teleop_node" output="screen">
+  <rosparam ~scale_linear="1.5" ~scale_angular="2" />
+</node>
+
+
+</launch>

@@ -1,0 +1,2 @@
+inmoov_bringup:inmoov_description:inmoov_firmware:inmoov_meshes:inmoov_msgs:inmoov_navigation:inmoov_tools:ros_arduino_bridge/ros_arduino_bridge:ros_arduino_bridge/ros_arduino_firmware:ros_arduino_bridge/ros_arduino_msgs:ros_arduino_bridge/ros_arduino_python:rplidar_ros
+-DCATKIN_DEVEL_PREFIX=/home/robot/inmoov_ros/devel -DCMAKE_INSTALL_PREFIX=/home/robot/inmoov_ros/install -G Unix Makefiles

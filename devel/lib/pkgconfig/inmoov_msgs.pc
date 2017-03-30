@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/devel
+
+Name: inmoov_msgs
+Description: Description of inmoov_msgs
+Version: 0.1.0
+Cflags: -I/home/robot/inmoov_ros/devel/include
+Libs: -L/home/robot/inmoov_ros/devel/lib 
+Requires: message_runtime std_msgs

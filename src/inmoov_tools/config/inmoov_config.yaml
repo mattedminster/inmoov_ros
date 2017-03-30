@@ -1,0 +1,207 @@
+##########################################
+#GENERAL
+##########################################
+joynode:
+  dev: /dev/input/js0
+
+inmoov:
+  name: Rosie
+  voice: test
+
+
+
+##########################################
+#LEFT HAND/ARM
+##########################################
+servobus:
+  rightarm:
+    port: /dev/arduinorightarm
+    name: servoBus/rightarm
+    servomap:
+      '0':
+        name: right_thumb
+        min: 0
+        max: 140
+        rest: 0
+      '1':
+        name: right_index
+        min: 0
+        max: 140
+        rest: 0
+      '2':
+        name: right_middle
+        min: 0
+        max: 140
+        rest: 0
+      '3':
+        name: right_ring
+        min: 0
+        max: 140
+        rest: 0
+      '4':
+        name: right_pinky
+        min: 0
+        max: 140
+        rest: 0
+      '5':
+        name: right_hand
+        min: 0
+        max: 140
+        rest: 65
+      '6':
+        name: right_bicep
+        min: 0
+        max: 90
+        rest: 0
+      '7':
+        name: right_bicep_rotate
+        min: 45
+        max: 160
+        rest: 90
+      '8':
+        name: right_shoulder_side
+        min: 0
+        max: 100
+        rest: 33
+      '9':
+        name: right_shoulder_up
+        min: 15
+        max: 60
+        rest: 15
+      '10':
+        name: rightarm-nc-10
+        min: 0
+        max: 0
+        rest: 0
+      '11':
+        name: rightarm-nc-11
+        min: 0
+        max: 0
+        rest: 0
+      '12':
+        name: rightarm-nc-12
+        min: 0
+        max: 0
+        rest: 0
+      '13':
+        name: rightarm-nc-13
+        min: 0
+        max: 0
+        rest: 0
+      '14':
+        name: rightarm-nc-14
+        min: 0
+        max: 0
+        rest: 0
+      '15':
+        name: rightarm-nc-15
+        min: 0
+        max: 0
+        rest: 0
+      '16':
+        name: rightarm-nc-16
+        min: 0
+        max: 0
+        rest: 0
+      '17':
+        name: rightarm-nc-17
+        min: 0
+        max: 0
+        rest: 0
+  leftarm:
+    port: /dev/arduinoleftarm
+    name: servoBus/leftarm
+    servomap:
+      '0':
+        name: left_thumb
+        min: 0
+        max: 140
+        rest: 0
+      '1':
+        name: left_index
+        min: 0
+        max: 140
+        rest: 0
+      '2':
+        name: left_middle
+        min: 0
+        max: 140
+        rest: 0
+      '3':
+        name: left_ring
+        min: 0
+        max: 140
+        rest: 0
+      '4':
+        name: left_pinky
+        min: 0
+        max: 140
+        rest: 0
+      '5':
+        name: left_hand
+        min: 0
+        max: 140
+        rest: 65
+      '6':
+        name: left_bicep
+        min: 0
+        max: 90
+        rest: 0
+      '7':
+        name: left_bicep_rotate
+        min: 45
+        max: 160
+        rest: 90
+      '8':
+        name: left_shoulder_side
+        min: 0
+        max: 100
+        rest: 33
+      '9':
+        name: left_shoulder_up
+        min: 15
+        max: 60
+        rest: 15
+      '10':
+        name: head_updown
+        min: 35
+        max: 145
+        rest: 90
+      '11':
+        name: head_leftright
+        min: 0
+        max: 180
+        rest: 90
+      '12':
+        name: head_tilt
+        min: 60
+        max: 180
+        rest: 120
+      '13':
+        name: eye_leftright
+        min: 45
+        max: 95
+        rest: 70
+      '14':
+        name: eyes_updown
+        min: 70
+        max: 110
+        rest: 90
+      '15':
+        name: jaw
+        min: 50
+        max: 80
+        rest: 75
+      '16':
+        name: waist_lean
+        min: 70
+        max: 120
+        rest: 108
+      '17':
+        name: waist_rotate
+        min: 60
+        max: 120
+        rest: 90
+  
+
+

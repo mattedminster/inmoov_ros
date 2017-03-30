@@ -1,0 +1,10 @@
+(cl:defpackage inmoov_msgs-srv
+  (:use )
+  (:export
+   "MOTORPARAMETER"
+   "<MOTORPARAMETER-REQUEST>"
+   "MOTORPARAMETER-REQUEST"
+   "<MOTORPARAMETER-RESPONSE>"
+   "MOTORPARAMETER-RESPONSE"
+  ))
+

@@ -1,0 +1,22 @@
+<launch>
+
+<node name="setup" pkg="inmoov_tools" type="setup_parameters.py" />
+
+
+
+<node pkg="rosserial_python" type="serial_node.py" name="servonodeleft" respawn="true" output="screen">
+<param name="port" value="/dev/arduinoleftarm"/>
+<param name="baud" value="115200"/>
+</node>
+<node pkg="rosserial_python" type="serial_node.py" name="servonoderight" respawn="true" output="screen">
+<param name="port" value="/dev/arduinorightarm"/>
+<param name="baud" value="115200"/>
+</node>
+
+<node name="voice_service" pkg="inmoov_tools" type="voice_service.py" />
+<node name="mouth_movements" pkg="inmoov_tools" type="mouthMovements.py" />
+
+<node name="robot" pkg="rosie_setup" type="robot" output="screen"/>
+
+
+</launch>
