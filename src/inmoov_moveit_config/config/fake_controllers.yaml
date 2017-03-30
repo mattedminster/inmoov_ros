@@ -1,0 +1,29 @@
+controller_list:
+  - name: fake_right_hand_controller
+    joints:
+      - right_hand
+      - right_index
+      - right_middle
+      - right_pinky
+      - right_ring
+      - right_thumb
+  - name: fake_right_arm_controller
+    joints:
+      - right_shoulder_side
+      - right_shoulder_up
+      - right_bicep_rotate
+      - right_bicep
+  - name: fake_left_arm_controller
+    joints:
+      - left_shoulder_side
+      - left_shoulder_up
+      - left_bicep_rotate
+      - left_bicep
+  - name: fake_left_hand_controller
+    joints:
+      - left_hand
+      - left_index
+      - left_middle
+      - left_pinky
+      - left_ring
+      - left_thumb

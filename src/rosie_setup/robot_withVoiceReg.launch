@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="rosserial_python" name="rosserial_connector" type="serial_node.py" output="screen" args="_baud:=57600 _port:=/dev/ttyACM1"/>
+  <node name="robot" pkg="rosie_setup" type="robot" />
+  <node pkg="gspeech" name="voice_reg" type="robot_speech.py" output="screen"/>
+</launch>
+
