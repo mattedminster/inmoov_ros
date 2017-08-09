@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/install
+
+Name: tensorflow_ros
+Description: Description of tensorflow_ros
+Version: 0.0.4
+Cflags: 
+Libs: -L/home/robot/inmoov_ros/install/lib 
+Requires: 

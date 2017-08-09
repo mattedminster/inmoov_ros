@@ -1,0 +1,3 @@
+string   toSpeak  #what to say                    
+---
+float32 data #how long the mp3 is (so we can sleep)

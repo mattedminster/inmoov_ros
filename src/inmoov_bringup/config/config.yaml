@@ -1,0 +1,90 @@
+bringup: {angles: degrees, hz: 20}
+joints:
+  eyes_pan_joint: {bus: 0, maxGoal: 30.0, maxPulse: 1800.0, maxSensor: -1, maxSpeed: 0.0,
+    minGoal: -30.0, minPulse: 750.0, minSensor: -1, rest: 0.0, sensorPin: -1, servoPin: 22,
+    smoothing: 0}
+  eyes_tilt_joint: {bus: 0, maxGoal: 15.0, maxPulse: 1750.0, maxSensor: -1, maxSpeed: 0.0,
+    minGoal: -30.0, minPulse: 1300.0, minSensor: -1, rest: 0.0, sensorPin: -1, servoPin: 24,
+    smoothing: 0}
+  head_pan_joint: {bus: 0, maxGoal: 85.0, maxPulse: 2500.0, maxSensor: -1, maxSpeed: 0.0,
+    minGoal: -85.0, minPulse: 750.0, minSensor: -1, rest: 0.0, sensorPin: -1, servoPin: 13,
+    smoothing: 0}
+  head_roll_joint: {bus: 0, maxGoal: 20, maxPulse: 1300.0, maxSensor: -1, maxSpeed: 0.0,
+    minGoal: -20, minPulse: 2500.0, minSensor: -1, rest: 0.0, sensorPin: -1, servoPin: 29,
+    smoothing: 0}
+  head_tilt_joint: {bus: 0, maxGoal: 17.0, maxPulse: 1250.0, maxSensor: -1, maxSpeed: 0.0,
+    minGoal: -15.0, minPulse: 2250.0, minSensor: -1, rest: 0.0, sensorPin: -1, servoPin: 12,
+    smoothing: 0}
+  jaw_joint: {bus: 0, maxGoal: 10.0, maxPulse: 845.0, maxSensor: -1, maxSpeed: 0.0,
+    minGoal: 0.0, minPulse: 1325.0, minSensor: -1, rest: 0.0, sensorPin: -1, servoPin: 26,
+    smoothing: 0}
+  l_elbow_flex_joint: {bus: 0, maxGoal: -22.0, maxPulse: 475.0, maxSensor: -1, maxSpeed: 0.0,
+    minGoal: -85.0, minPulse: 1400.0, minSensor: -1, rest: 0.0, sensorPin: -1, servoPin: 8,
+    smoothing: 0}
+  l_index_joint: {bus: 0, maxGoal: 85.0, maxPulse: 2450, maxSensor: -1, maxSpeed: 0.0,
+    minGoal: 0.0, minPulse: 550, minSensor: -1, rest: 0.0, sensorPin: -1, servoPin: 3,
+    smoothing: 0}
+  l_middle_joint: {bus: 0, maxGoal: 85.0, maxPulse: 2450, maxSensor: -1, maxSpeed: 0.0,
+    minGoal: 0.0, minPulse: 550, minSensor: -1, rest: 0.0, sensorPin: -1, servoPin: 4,
+    smoothing: 0}
+  l_pinky_joint: {bus: 0, maxGoal: 75.0, maxPulse: 2450, maxSensor: -1, maxSpeed: 0.0,
+    minGoal: 0.0, minPulse: 550, minSensor: -1, rest: 0.0, sensorPin: -1, servoPin: 6,
+    smoothing: 0}
+  l_ring_joint: {bus: 0, maxGoal: 75.0, maxPulse: 2450, maxSensor: -1.0, maxSpeed: 0.0,
+    minGoal: 0.0, minPulse: 550, minSensor: -1.0, rest: 0.0, sensorPin: -1, servoPin: 5,
+    smoothing: 0}
+  l_shoulder_lift_joint: {bus: 0, maxGoal: 31.0, maxPulse: 670.0, maxSensor: -1, maxSpeed: 0.0,
+    minGoal: -180.0, minPulse: 2500.0, minSensor: -1, rest: 0.0, sensorPin: -1, servoPin: 10,
+    smoothing: 0}
+  l_shoulder_out_joint: {bus: 0, maxGoal: 73.0, maxPulse: 1175.0, maxSensor: -1, maxSpeed: 0.0,
+    minGoal: 5.0, minPulse: 611.0, minSensor: -1, rest: 5.0, sensorPin: -1, servoPin: 11,
+    smoothing: 0}
+  l_thumb_joint: {bus: 0, maxGoal: 60.0, maxPulse: 2450, maxSensor: -1, maxSpeed: 0.0,
+    minGoal: 0.0, minPulse: 550, minSensor: -1, rest: 0.0, sensorPin: -1, servoPin: 2,
+    smoothing: 0}
+  l_upper_arm_roll_joint: {bus: 0, maxGoal: 83.0, maxPulse: 2250.0, maxSensor: -1,
+    maxSpeed: 0.0, minGoal: -88.0, minPulse: 890.0, minSensor: -1, rest: 0.0, sensorPin: -1,
+    servoPin: 9, smoothing: 0}
+  l_wrist_roll_joint: {bus: 0, maxGoal: 220.0, maxPulse: 1900.0, maxSensor: -1, maxSpeed: 0.0,
+    minGoal: 122.0, minPulse: 100.0, minSensor: -1, rest: 160.0, sensorPin: -1, servoPin: 7,
+    smoothing: 0}
+  r_elbow_flex_joint: {bus: 1, maxGoal: -12.5, maxPulse: 475.0, maxSensor: -1, maxSpeed: 0.0,
+    minGoal: -80.0, minPulse: 1400.0, minSensor: -1, rest: -12.5, sensorPin: -1, servoPin: 8,
+    smoothing: 0}
+  r_index_joint: {bus: 1, maxGoal: 85.0, maxPulse: 2500.0, maxSensor: -1, maxSpeed: 0.0,
+    minGoal: 0.0, minPulse: 550, minSensor: -1, rest: 0.0, sensorPin: -1, servoPin: 3,
+    smoothing: 0}
+  r_middle_joint: {bus: 1, maxGoal: 85.0, maxPulse: 2450, maxSensor: -1, maxSpeed: 0.0,
+    minGoal: 0.0, minPulse: 550, minSensor: -1, rest: 0.0, sensorPin: -1, servoPin: 4,
+    smoothing: 0}
+  r_pinky_joint: {bus: 1, maxGoal: 75.0, maxPulse: 2450, maxSensor: -1, maxSpeed: 0.0,
+    minGoal: 0.0, minPulse: 500, minSensor: -1, rest: 0.0, sensorPin: -1, servoPin: 6,
+    smoothing: 0}
+  r_ring_joint: {bus: 1, maxGoal: 75.0, maxPulse: 2450, maxSensor: -1, maxSpeed: 0.0,
+    minGoal: 0.0, minPulse: 550, minSensor: -1, rest: 0.0, sensorPin: -1, servoPin: 5,
+    smoothing: 0}
+  r_shoulder_lift_joint: {bus: 1, maxGoal: 15.3, maxPulse: 550.0, maxSensor: -1, maxSpeed: 0.0,
+    minGoal: -179.0, minPulse: 2369.0, minSensor: -1, rest: 0.0, sensorPin: -1, servoPin: 10,
+    smoothing: 0}
+  r_shoulder_out_joint: {bus: 1, maxGoal: -7.0, maxPulse: 730.0, maxSensor: -1, maxSpeed: 0.0,
+    minGoal: -60.0, minPulse: 1300.0, minSensor: -1, rest: -7.0, sensorPin: -1, servoPin: 11,
+    smoothing: 0}
+  r_thumb_joint: {bus: 1, maxGoal: 60.0, maxPulse: 2450, maxSensor: -1, maxSpeed: 0.0,
+    minGoal: 0.0, minPulse: 550, minSensor: -1, rest: 0.0, sensorPin: -1, servoPin: 2,
+    smoothing: 0}
+  r_upper_arm_roll_joint: {bus: 1, maxGoal: 60.0, maxPulse: 750.0, maxSensor: -1,
+    maxSpeed: 0.0, minGoal: -53.0, minPulse: 2200.0, minSensor: -1, rest: 0.0, sensorPin: -1,
+    servoPin: 9, smoothing: 0}
+  r_wrist_roll_joint: {bus: 1, maxGoal: 225.0, maxPulse: 2500.0, maxSensor: -1, maxSpeed: 0.0,
+    minGoal: 125.0, minPulse: 500.0, minSensor: -1, rest: 90.0, sensorPin: -1, servoPin: 7,
+    smoothing: 0}
+  waist_pan_joint: {bus: 0, maxGoal: 26.0, maxPulse: 1800.0, maxSensor: -1, maxSpeed: 0.0,
+    minGoal: -26.0, minPulse: 1200.0, minSensor: -1, rest: 0.0, sensorPin: -1, servoPin: 28.0,
+    smoothing: 0}
+  waist_roll_joint: {bus: 0, maxGoal: 15.0, maxPulse: 1400.0, maxSensor: -1, maxSpeed: 0.0,
+    minGoal: -15.0, minPulse: 1800.0, minSensor: -1, rest: 0.0, sensorPin: -1, servoPin: 27,
+    smoothing: 0}
+name: Rosie
+neopixel: {enabled: true, port: /dev/arduinoneopixel}
+port: {'0': /dev/arduinoleftarm, '1': /dev/arduinorightarm}
+voice: Joanna

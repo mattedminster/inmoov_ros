@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/install
+
+Name: moveit_ros_benchmarks
+Description: Description of moveit_ros_benchmarks
+Version: 0.9.7
+Cflags: -I/home/robot/inmoov_ros/install/include
+Libs: -L/home/robot/inmoov_ros/install/lib -lmoveit_ros_benchmarks
+Requires: moveit_ros_planning moveit_ros_warehouse roscpp

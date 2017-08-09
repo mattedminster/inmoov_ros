@@ -1,0 +1,105 @@
+base_link: 'base_link'
+
+# =====================================================
+right_hand:
+  end_effector_name: 'right_hand'
+
+  #default grasp params
+  joints : ['r_thumb_joint', 'r_index_joint', 'r_middle_joint', 'r_ring_joint', 'r_pinky_joint']
+  pregrasp_posture : [0.0, 0.0, 2.0, 0.0, 0.0]
+  pregrasp_time_from_start : 4.0
+  grasp_posture : [0.0,0.0,0.0,0.0]
+  grasp_time_from_start : 4.0
+
+  #desired pose from end effector to grasp
+  #grasp_pose_to_eef_translation : [0.054, 0.0, 0.018]
+
+  #desired pose from end effector to grasp - [r, p, y]
+  #grasp_pose_to_eef_rotation : [0, 1.5708, 0] # 1.5707 = PI/2
+
+  # Distance from wrist joint to palm of end effector [x, y, z, r, p, y]
+  # Rotation from wrist joint to std end effector orientation
+  #z-axis pointing toward object to grasp
+  #x-axis perp. to movement of grippers
+  #y-axis parallel to movement of grippers
+  grasp_pose_to_eef_transform :  [0, 0.00014, 0.1029, 0, 0, 0]
+
+  #end_effector_parent_link: 'r_gripper_joint'
+
+  # max depth of fingers (distance from finger tip to inner palm)
+  finger_to_palm_depth : 0.1
+
+  # width of gripper fingers
+  gripper_finger_width : 0.015
+
+  # max object width that can fit between fingers
+  max_grasp_width : 0.1
+
+  # grasp resolution parameters (angle is in degrees)
+  grasp_resolution : 0.02
+  grasp_depth_resolution : 0.05
+  grasp_min_depth : 0.01
+  angle_resolution : 15
+
+  # grasp approach and retreat parameters
+  approach_distance_desired: 0.125 # 0.2 # this is in addition to the finger_to_palm_depth
+  retreat_distance_desired: 0.3 # this is in addition to the finger_to_palm_depth
+  lift_distance_desired: 0.015 # this is really just MIN LIFT DISTANCE
+  grasp_padding_on_approach: 0.010 # minimum padding on each side of the object on approach
+
+  # Distance between fingers, in meters
+  max_finger_width: 0.102
+  min_finger_width: 0.004
+
+
+# =====================================================
+left_hand:
+  end_effector_name: 'left_hand'
+
+  #default grasp params
+  joints : ['l_thumb_joint', 'l_index_joint', 'l_middle_joint', 'l_ring_joint', 'l_pinky_joint']
+  pregrasp_posture : [0.0, 0.0, 2.0, 0.0,0.0]
+  pregrasp_time_from_start : 4.0
+  grasp_posture : [0.0, 0.0, 2.0, 0.0, 0.0]
+  grasp_time_from_start : 4.0
+
+  #desired pose from end effector to grasp
+  #grasp_pose_to_eef_translation : [0.054, 0.0, 0.018]
+
+  #desired pose from end effector to grasp - [r, p, y]
+  #grasp_pose_to_eef_rotation : [0, 1.5708, 0] # 1.5707 = PI/2
+
+  # Distance from wrist joint to palm of end effector [x, y, z, r, p, y]
+  # Rotation from wrist joint to std end effector orientation
+  #z-axis pointing toward object to grasp
+  #x-axis perp. to movement of grippers
+  #y-axis parallel to movement of grippers
+  grasp_pose_to_eef_transform :  [0, 0.00014, 0.1029, 0, 0, 0]
+
+  #end_effector_parent_link: 'l_gripper_joint'
+
+  # max depth of fingers (distance from finger tip to inner palm)
+  finger_to_palm_depth : 0.1
+
+  # width of gripper fingers
+  gripper_finger_width : 0.015
+
+  # max object width that can fit between fingers
+  max_grasp_width : 0.1
+
+  # grasp resolution parameters (angle is in degrees)
+  grasp_resolution : 0.02
+  grasp_depth_resolution : 0.05
+  grasp_min_depth : 0.01
+  angle_resolution : 15
+
+  # grasp approach and retreat parameters
+  approach_distance_desired: 0.125 # 0.2 # this is in addition to the finger_to_palm_depth
+  retreat_distance_desired: 0.3 # this is in addition to the finger_to_palm_depth
+  lift_distance_desired: 0.015 # this is really just MIN LIFT DISTANCE
+  grasp_padding_on_approach: 0.010 # minimum padding on each side of the object on approach
+
+  # Distance between fingers, in meters
+  max_finger_width: 0.102
+  min_finger_width: 0.004
+

@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/devel
+
+Name: moveit_resources
+Description: Description of moveit_resources
+Version: 0.6.2
+Cflags: -I/home/robot/inmoov_ros/src/moveit_resources/include -I/home/robot/inmoov_ros/devel/include
+Libs: -L/home/robot/inmoov_ros/devel/lib 
+Requires: 

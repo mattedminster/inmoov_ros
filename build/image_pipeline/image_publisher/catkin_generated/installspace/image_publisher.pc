@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/install
+
+Name: image_publisher
+Description: Description of image_publisher
+Version: 1.12.20
+Cflags: -I/home/robot/inmoov_ros/install/include
+Libs: -L/home/robot/inmoov_ros/install/lib 
+Requires: 

@@ -1,0 +1,20 @@
+<launch>
+
+  <node pkg="rosserial_python" type="serial_node.py" name="bus" respawn="true" output="screen">
+    <param name="port" value="/dev/arduinoconfetti"/>
+    <param name="baud" value="115200"/>
+  </node>
+
+
+<node name="voice_service" pkg="inmoov_bringup" type="inmoov_voice_service.py" respawn="true" output="screen"/>
+
+<node name="play_sound_service" pkg="inmoov_bringup" type="inmoov_sound_play_service.py" respawn="true" output="screen"/>
+
+<node name="mouth_movements" pkg="inmoov_bringup" type="inmoov_mouth_movements.py" respawn="true" output="screen"/>
+<node name="hue" pkg="ros_hue" type="ros_hue.py" respawn="true" output="screen"/>
+
+<node name="inmoov_baby" pkg="inmoov_tools" type="Inmoov_Baby.py" respawn="true" output="screen"/>
+
+<node name="inmoov_look" pkg="inmoov_tools" type="look.py" respawn="false" output="screen"/>
+
+</launch>

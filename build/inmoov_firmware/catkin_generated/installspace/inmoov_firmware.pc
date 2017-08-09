@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/install
+
+Name: inmoov_firmware
+Description: Description of inmoov_firmware
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/robot/inmoov_ros/install/lib 
+Requires: 

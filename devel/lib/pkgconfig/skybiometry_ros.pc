@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/devel
+
+Name: skybiometry_ros
+Description: Description of skybiometry_ros
+Version: 0.0.4
+Cflags: 
+Libs: -L/home/robot/inmoov_ros/devel/lib 
+Requires: 

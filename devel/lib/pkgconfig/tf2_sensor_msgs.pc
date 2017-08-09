@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/devel
+
+Name: tf2_sensor_msgs
+Description: Description of tf2_sensor_msgs
+Version: 0.5.15
+Cflags: -I/home/robot/inmoov_ros/src/geometry2/tf2_sensor_msgs/include -I/usr/include/eigen3
+Libs: -L/home/robot/inmoov_ros/devel/lib 
+Requires: sensor_msgs tf2_ros tf2

@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/devel
+
+Name: ros_hue_msgs
+Description: Description of ros_hue_msgs
+Version: 0.0.0
+Cflags: -I/home/robot/inmoov_ros/devel/include
+Libs: -L/home/robot/inmoov_ros/devel/lib 
+Requires: message_runtime std_msgs

@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/devel
+
+Name: moveit_simple_controller_manager
+Description: Description of moveit_simple_controller_manager
+Version: 0.9.7
+Cflags: -I/home/robot/inmoov_ros/src/moveit/moveit_plugins/moveit_simple_controller_manager/include
+Libs: -L/home/robot/inmoov_ros/devel/lib 
+Requires: moveit_core actionlib control_msgs

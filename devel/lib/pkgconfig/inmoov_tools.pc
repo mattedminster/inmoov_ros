@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/devel
+
+Name: inmoov_tools
+Description: Description of inmoov_tools
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/robot/inmoov_ros/devel/lib 
+Requires: 

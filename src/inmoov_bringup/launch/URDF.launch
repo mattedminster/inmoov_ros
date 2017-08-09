@@ -1,0 +1,7 @@
+<launch>
+<group ns="inmoov/" >
+<rosparam file="$(find inmoov_bringup)/config/config.yaml"/>
+</group>
+
+<rosparam file="$(find inmoov_bringup)/config/config.yaml"/>
+</launch>

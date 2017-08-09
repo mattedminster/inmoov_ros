@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/install
+
+Name: robot_calibration_msgs
+Description: Description of robot_calibration_msgs
+Version: 0.5.3
+Cflags: -I/home/robot/inmoov_ros/install/include
+Libs: -L/home/robot/inmoov_ros/install/lib 
+Requires: actionlib_msgs geometry_msgs message_runtime sensor_msgs std_msgs

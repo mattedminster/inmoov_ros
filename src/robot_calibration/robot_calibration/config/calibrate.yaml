@@ -1,0 +1,51 @@
+verbose: true
+base_link: base_link
+models:
+ - name: right_arm
+   type: chain
+   frame: r_wrist_roll_joint
+ - name: left_arm
+   type: chain
+   frame: l_wrist_roll_joint
+ - name: camera
+   type: camera3d
+   frame: camera_rgb_optical_joint
+   topic: /camera/depth/points
+free_params:
+ - waist_pan_joint
+ - l_shoulder_out_joint
+ - l_shoulder_lift_joint
+ - l_upper_arm_roll_joint
+ - l_elbow_flex_joint
+ - l_wrist_roll_joint
+ - r_shoulder_out_joint
+ - r_shoulder_lift_joint
+ - r_upper_arm_roll_joint
+ - r_elbow_flex_joint
+ - r_wrist_roll_joint
+free_frames:
+ - name: camera_rgb_optical_joint
+   x: true
+   y: true
+   z: true
+   roll: true
+   pitch: true
+   yaw: true
+ - name: checkerboard
+   x: true
+   y: false
+   z: true
+   roll: false
+   pitch: true
+   yaw: false
+error_blocks:
+ - name: hand_eye
+   type: camera3d_to_arm
+   camera: camera
+   arm: arm
+ - name: restrict_camera
+   type: outrageous
+   param: camera_rgb_optical_joint
+   joint_scale: 0.0
+   position_scale: 0.1
+   rotation_scale: 0.1

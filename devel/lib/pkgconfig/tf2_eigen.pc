@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/devel
+
+Name: tf2_eigen
+Description: Description of tf2_eigen
+Version: 0.5.15
+Cflags: -I/home/robot/inmoov_ros/src/geometry2/tf2_eigen/include
+Libs: -L/home/robot/inmoov_ros/devel/lib 
+Requires: 

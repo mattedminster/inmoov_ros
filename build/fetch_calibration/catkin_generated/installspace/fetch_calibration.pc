@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/install
+
+Name: fetch_calibration
+Description: Description of fetch_calibration
+Version: 0.7.10
+Cflags: 
+Libs: -L/home/robot/inmoov_ros/install/lib 
+Requires: 

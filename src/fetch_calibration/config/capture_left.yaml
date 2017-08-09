@@ -1,0 +1,19 @@
+chains:
+  - name: arm
+    topic: /follow_joint_trajectory
+    joints:
+     - waist_pan_joint
+     - waist_roll_joint
+     - l_shoulder_out_joint
+     - l_shoulder_lift_joint
+     - l_upper_arm_roll_joint
+     - l_elbow_flex_joint
+     - l_wrist_roll_joint
+    planning_group: right_arm
+duration: 2.0
+features:
+  checkerboard_finder:
+    type: robot_calibration/CheckerboardFinder
+    topic: /camera/depth/points
+    points_x: 4
+    points_y: 3

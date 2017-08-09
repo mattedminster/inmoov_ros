@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/devel
+
+Name: object_recognition_renderer
+Description: Description of object_recognition_renderer
+Version: 0.2.2
+Cflags: -I/home/robot/inmoov_ros/src/ork_renderer/include -I/usr/include
+Libs: -L/home/robot/inmoov_ros/devel/lib -lobject_recognition_renderer_2d -lobject_recognition_renderer_3d
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/install
+
+Name: ros_hue
+Description: Description of ros_hue
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/robot/inmoov_ros/install/lib 
+Requires: 

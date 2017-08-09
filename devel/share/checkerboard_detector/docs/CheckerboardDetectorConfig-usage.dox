@@ -1,0 +1,10 @@
+\subsubsection usage Usage
+\verbatim
+<node name="checkerboard_detector" pkg="checkerboard_detector" type="checkerboard_detector">
+  <param name="adaptive_thresh" type="bool" value="False" />
+  <param name="normalize_image" type="bool" value="False" />
+  <param name="filter_quads" type="bool" value="False" />
+  <param name="fast_check" type="bool" value="False" />
+</node>
+\endverbatim
+

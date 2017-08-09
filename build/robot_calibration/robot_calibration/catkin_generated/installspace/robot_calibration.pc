@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/install
+
+Name: robot_calibration
+Description: Description of robot_calibration
+Version: 0.5.3
+Cflags: -I/home/robot/inmoov_ros/install/include -I/usr/include -I/usr/include/eigen3 -I/opt/ros/kinetic/include
+Libs: -L/home/robot/inmoov_ros/install/lib -lrobot_calibration -l:/usr/lib/x86_64-linux-gnu/libboost_system.so -l:/usr/lib/x86_64-linux-gnu/libboost_thread.so -l:/usr/lib/x86_64-linux-gnu/libboost_chrono.so -l:/usr/lib/x86_64-linux-gnu/libboost_date_time.so -l:/usr/lib/x86_64-linux-gnu/libboost_atomic.so -l:/usr/lib/x86_64-linux-gnu/libpthread.so -l:/opt/ros/kinetic/lib/liborocos-kdl.so.1.3.0
+Requires: actionlib camera_calibration_parsers cv_bridge geometry_msgs kdl_parser moveit_msgs nav_msgs robot_calibration_msgs rosbag roscpp sensor_msgs std_msgs tf

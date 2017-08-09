@@ -1,0 +1,7 @@
+<launch>
+
+<node name="Leap_pub" pkg="inmoov_leapmotion" type="LeapPublisher.py" respawn="true" output="screen"/>
+
+<node name="Leap_sub" pkg="inmoov_leapmotion" type="LeapSubscriber.py" respawn="true" output="screen"/>
+
+</launch>
