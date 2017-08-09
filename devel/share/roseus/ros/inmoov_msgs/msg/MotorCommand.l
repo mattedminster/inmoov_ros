@@ -14,23 +14,23 @@
 
 (defclass inmoov_msgs::MotorCommand
   :super ros::object
-  :slots (_id _parameter _value ))
+  :slots (_pin _parameter _value ))
 
 (defmethod inmoov_msgs::MotorCommand
   (:init
    (&key
-    ((:id __id) 0)
+    ((:pin __pin) 0)
     ((:parameter __parameter) 0)
     ((:value __value) 0.0)
     )
    (send-super :init)
-   (setq _id (round __id))
+   (setq _pin (round __pin))
    (setq _parameter (round __parameter))
    (setq _value (float __value))
    self)
-  (:id
-   (&optional __id)
-   (if __id (setq _id __id)) _id)
+  (:pin
+   (&optional __pin)
+   (if __pin (setq _pin __pin)) _pin)
   (:parameter
    (&optional __parameter)
    (if __parameter (setq _parameter __parameter)) _parameter)
@@ -40,8 +40,8 @@
   (:serialization-length
    ()
    (+
-    ;; uint8 _id
-    1
+    ;; int32 _pin
+    4
     ;; uint8 _parameter
     1
     ;; float32 _value
@@ -51,8 +51,8 @@
    (&optional strm)
    (let ((s (if strm strm
               (make-string-output-stream (send self :serialization-length)))))
-     ;; uint8 _id
-       (write-byte _id s)
+     ;; int32 _pin
+       (write-long _pin s)
      ;; uint8 _parameter
        (write-byte _parameter s)
      ;; float32 _value
@@ -61,8 +61,8 @@
      (if (null strm) (get-output-stream-string s))))
   (:deserialize
    (buf &optional (ptr- 0))
-   ;; uint8 _id
-     (setq _id (sys::peek buf ptr- :char)) (incf ptr- 1)
+   ;; int32 _pin
+     (setq _pin (sys::peek buf ptr- :integer)) (incf ptr- 4)
    ;; uint8 _parameter
      (setq _parameter (sys::peek buf ptr- :char)) (incf ptr- 1)
    ;; float32 _value
@@ -71,10 +71,10 @@
    self)
   )
 
-(setf (get inmoov_msgs::MotorCommand :md5sum-) "eb0b08dd62a5eaff08551ecb80949ef6")
+(setf (get inmoov_msgs::MotorCommand :md5sum-) "a3be74fad61fe1fa6f980c41406a4b63")
 (setf (get inmoov_msgs::MotorCommand :datatype-) "inmoov_msgs/MotorCommand")
 (setf (get inmoov_msgs::MotorCommand :definition-)
-      "uint8   id                      # motor id
+      "int32   pin                      # motor id
 uint8   parameter               # parameter
 float32 value			# value
 
@@ -83,6 +83,6 @@ float32 value			# value
 
 
 
-(provide :inmoov_msgs/MotorCommand "eb0b08dd62a5eaff08551ecb80949ef6")
+(provide :inmoov_msgs/MotorCommand "a3be74fad61fe1fa6f980c41406a4b63")
 
 

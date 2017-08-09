@@ -40,7 +40,7 @@ template<>
 struct MD5Sum< ::inmoov_msgs::MotorParameter > {
   static const char* value()
   {
-    return "97de38f733bf57ad772faf1928f3cb93";
+    return "5f77ee216d4d41fb39b36b0a0436a53b";
   }
 
   static const char* value(const ::inmoov_msgs::MotorParameter&) { return value(); }

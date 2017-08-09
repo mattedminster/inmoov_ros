@@ -1,3 +1,0 @@
-<launch>
-<rosparam command="load" file="$(find inmoov_tools)/config/inmoov_config.yaml" />
-</launch>

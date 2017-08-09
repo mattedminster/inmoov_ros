@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/install
+
+Name: opencv_tests
+Description: Description of opencv_tests
+Version: 1.12.4
+Cflags: 
+Libs: -L/home/robot/inmoov_ros/install/lib 
+Requires: 

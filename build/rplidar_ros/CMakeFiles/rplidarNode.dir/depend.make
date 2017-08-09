@@ -58,8 +58,6 @@ rplidar_ros/CMakeFiles/rplidarNode.dir/src/node.cpp.o: /home/robot/inmoov_ros/sr
 rplidar_ros/CMakeFiles/rplidarNode.dir/src/node.cpp.o: /home/robot/inmoov_ros/src/rplidar_ros/./sdk/include/rplidar_protocol.h
 rplidar_ros/CMakeFiles/rplidarNode.dir/src/node.cpp.o: /home/robot/inmoov_ros/src/rplidar_ros/./sdk/include/rptypes.h
 rplidar_ros/CMakeFiles/rplidarNode.dir/src/node.cpp.o: /home/robot/inmoov_ros/src/rplidar_ros/src/node.cpp
-rplidar_ros/CMakeFiles/rplidarNode.dir/src/node.cpp.o: /opt/ros/kinetic/include/XmlRpcDecl.h
-rplidar_ros/CMakeFiles/rplidarNode.dir/src/node.cpp.o: /opt/ros/kinetic/include/XmlRpcValue.h
 rplidar_ros/CMakeFiles/rplidarNode.dir/src/node.cpp.o: /opt/ros/kinetic/include/ros/advertise_options.h
 rplidar_ros/CMakeFiles/rplidarNode.dir/src/node.cpp.o: /opt/ros/kinetic/include/ros/advertise_service_options.h
 rplidar_ros/CMakeFiles/rplidarNode.dir/src/node.cpp.o: /opt/ros/kinetic/include/ros/assert.h
@@ -119,4 +117,6 @@ rplidar_ros/CMakeFiles/rplidarNode.dir/src/node.cpp.o: /opt/ros/kinetic/include/
 rplidar_ros/CMakeFiles/rplidarNode.dir/src/node.cpp.o: /opt/ros/kinetic/include/std_srvs/Empty.h
 rplidar_ros/CMakeFiles/rplidarNode.dir/src/node.cpp.o: /opt/ros/kinetic/include/std_srvs/EmptyRequest.h
 rplidar_ros/CMakeFiles/rplidarNode.dir/src/node.cpp.o: /opt/ros/kinetic/include/std_srvs/EmptyResponse.h
+rplidar_ros/CMakeFiles/rplidarNode.dir/src/node.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
+rplidar_ros/CMakeFiles/rplidarNode.dir/src/node.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcValue.h
 

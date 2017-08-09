@@ -53,30 +53,133 @@ CMAKE_BINARY_DIR = /home/robot/inmoov_ros/build
 # Include the progress variables for this target.
 include inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_lisp.dir/progress.make
 
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/NeoPixel.lisp
 inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/MotorCommand.lisp
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/LeapFrame.lisp
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/Status.lisp
 inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/MotorStatus.lisp
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/NeoPixel_command.lisp
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/LeapHand.lisp
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/ServoSetup.lisp
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/LeapPointable.lisp
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/LeapGesture.lisp
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv/NeoPixelSetBrightness.lisp
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv/inmoov_voice.lisp
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv/RequestStatus.lisp
 inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv/MotorParameter.lisp
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv/RPS.lisp
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv/inmoov_sound_play.lisp
 
+
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/NeoPixel.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/NeoPixel.lisp: /home/robot/inmoov_ros/src/inmoov_msgs/msg/NeoPixel.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from inmoov_msgs/NeoPixel.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/NeoPixel.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg
 
 /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/MotorCommand.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
 /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/MotorCommand.lisp: /home/robot/inmoov_ros/src/inmoov_msgs/msg/MotorCommand.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from inmoov_msgs/MotorCommand.msg"
-	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/MotorCommand.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from inmoov_msgs/MotorCommand.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/MotorCommand.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg
+
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/LeapFrame.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/LeapFrame.lisp: /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapFrame.msg
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/LeapFrame.lisp: /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapPointable.msg
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/LeapFrame.lisp: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/LeapFrame.lisp: /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapGesture.msg
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/LeapFrame.lisp: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/LeapFrame.lisp: /opt/ros/kinetic/share/geometry_msgs/msg/Vector3.msg
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/LeapFrame.lisp: /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapHand.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Lisp code from inmoov_msgs/LeapFrame.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapFrame.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg
+
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/Status.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/Status.lisp: /home/robot/inmoov_ros/src/inmoov_msgs/msg/Status.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Lisp code from inmoov_msgs/Status.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/Status.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg
 
 /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/MotorStatus.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
 /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/MotorStatus.lisp: /home/robot/inmoov_ros/src/inmoov_msgs/msg/MotorStatus.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from inmoov_msgs/MotorStatus.msg"
-	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/MotorStatus.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Lisp code from inmoov_msgs/MotorStatus.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/MotorStatus.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg
+
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/NeoPixel_command.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/NeoPixel_command.lisp: /home/robot/inmoov_ros/src/inmoov_msgs/msg/NeoPixel_command.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Lisp code from inmoov_msgs/NeoPixel_command.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/NeoPixel_command.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg
+
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/LeapHand.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/LeapHand.lisp: /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapHand.msg
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/LeapHand.lisp: /opt/ros/kinetic/share/geometry_msgs/msg/Vector3.msg
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/LeapHand.lisp: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Lisp code from inmoov_msgs/LeapHand.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapHand.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg
+
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/ServoSetup.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/ServoSetup.lisp: /home/robot/inmoov_ros/src/inmoov_msgs/msg/ServoSetup.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Lisp code from inmoov_msgs/ServoSetup.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/ServoSetup.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg
+
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/LeapPointable.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/LeapPointable.lisp: /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapPointable.msg
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/LeapPointable.lisp: /opt/ros/kinetic/share/geometry_msgs/msg/Vector3.msg
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/LeapPointable.lisp: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Lisp code from inmoov_msgs/LeapPointable.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapPointable.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg
+
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/LeapGesture.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/LeapGesture.lisp: /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapGesture.msg
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/LeapGesture.lisp: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/LeapGesture.lisp: /opt/ros/kinetic/share/geometry_msgs/msg/Vector3.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Lisp code from inmoov_msgs/LeapGesture.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapGesture.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg
+
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv/NeoPixelSetBrightness.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv/NeoPixelSetBrightness.lisp: /home/robot/inmoov_ros/src/inmoov_msgs/srv/NeoPixelSetBrightness.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Lisp code from inmoov_msgs/NeoPixelSetBrightness.srv"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/robot/inmoov_ros/src/inmoov_msgs/srv/NeoPixelSetBrightness.srv -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv
+
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv/inmoov_voice.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv/inmoov_voice.lisp: /home/robot/inmoov_ros/src/inmoov_msgs/srv/inmoov_voice.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating Lisp code from inmoov_msgs/inmoov_voice.srv"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/robot/inmoov_ros/src/inmoov_msgs/srv/inmoov_voice.srv -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv
+
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv/RequestStatus.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv/RequestStatus.lisp: /home/robot/inmoov_ros/src/inmoov_msgs/srv/RequestStatus.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating Lisp code from inmoov_msgs/RequestStatus.srv"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/robot/inmoov_ros/src/inmoov_msgs/srv/RequestStatus.srv -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv
 
 /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv/MotorParameter.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
 /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv/MotorParameter.lisp: /home/robot/inmoov_ros/src/inmoov_msgs/srv/MotorParameter.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Lisp code from inmoov_msgs/MotorParameter.srv"
-	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/robot/inmoov_ros/src/inmoov_msgs/srv/MotorParameter.srv -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating Lisp code from inmoov_msgs/MotorParameter.srv"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/robot/inmoov_ros/src/inmoov_msgs/srv/MotorParameter.srv -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv
+
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv/RPS.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv/RPS.lisp: /home/robot/inmoov_ros/src/inmoov_msgs/srv/RPS.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating Lisp code from inmoov_msgs/RPS.srv"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/robot/inmoov_ros/src/inmoov_msgs/srv/RPS.srv -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv
+
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv/inmoov_sound_play.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
+/home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv/inmoov_sound_play.lisp: /home/robot/inmoov_ros/src/inmoov_msgs/srv/inmoov_sound_play.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating Lisp code from inmoov_msgs/inmoov_sound_play.srv"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/robot/inmoov_ros/src/inmoov_msgs/srv/inmoov_sound_play.srv -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv
 
 inmoov_msgs_generate_messages_lisp: inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_lisp
+inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/NeoPixel.lisp
 inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/MotorCommand.lisp
+inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/LeapFrame.lisp
+inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/Status.lisp
 inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/MotorStatus.lisp
+inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/NeoPixel_command.lisp
+inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/LeapHand.lisp
+inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/ServoSetup.lisp
+inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/LeapPointable.lisp
+inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/msg/LeapGesture.lisp
+inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv/NeoPixelSetBrightness.lisp
+inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv/inmoov_voice.lisp
+inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv/RequestStatus.lisp
 inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv/MotorParameter.lisp
+inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv/RPS.lisp
+inmoov_msgs_generate_messages_lisp: /home/robot/inmoov_ros/devel/share/common-lisp/ros/inmoov_msgs/srv/inmoov_sound_play.lisp
 inmoov_msgs_generate_messages_lisp: inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_lisp.dir/build.make
 
 .PHONY : inmoov_msgs_generate_messages_lisp

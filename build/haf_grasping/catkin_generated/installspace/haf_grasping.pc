@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/install
+
+Name: haf_grasping
+Description: Description of haf_grasping
+Version: 1.0.0
+Cflags: -I/home/robot/inmoov_ros/install/include
+Libs: -L/home/robot/inmoov_ros/install/lib 
+Requires: actionlib actionlib_msgs std_msgs geometry_msgs message_runtime pcl_conversions pcl_ros sensor_msgs visualization_msgs

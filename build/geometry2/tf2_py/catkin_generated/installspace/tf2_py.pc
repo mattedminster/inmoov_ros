@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/install
+
+Name: tf2_py
+Description: Description of tf2_py
+Version: 0.5.15
+Cflags: 
+Libs: -L/home/robot/inmoov_ros/install/lib 
+Requires: rospy tf2

@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/devel
+
+Name: chomp_motion_planner
+Description: Description of chomp_motion_planner
+Version: 0.9.7
+Cflags: -I/home/robot/inmoov_ros/src/moveit/moveit_planners/chomp/chomp_motion_planner/include
+Libs: -L/home/robot/inmoov_ros/devel/lib -lchomp_motion_planner
+Requires: 

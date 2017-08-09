@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/devel
+
+Name: moveit_ros_robot_interaction
+Description: Description of moveit_ros_robot_interaction
+Version: 0.9.7
+Cflags: -I/home/robot/inmoov_ros/src/moveit/moveit_ros/robot_interaction/include
+Libs: -L/home/robot/inmoov_ros/devel/lib -lmoveit_robot_interaction
+Requires: moveit_ros_planning interactive_markers

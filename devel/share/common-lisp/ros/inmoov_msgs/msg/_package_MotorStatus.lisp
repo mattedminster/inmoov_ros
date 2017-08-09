@@ -1,10 +1,18 @@
 (cl:in-package inmoov_msgs-msg)
-(cl:export '(ID-VAL
-          ID
+(cl:export '(JOINT-VAL
+          JOINT
+          BUS-VAL
+          BUS
+          SERVOPIN-VAL
+          SERVOPIN
           GOAL-VAL
           GOAL
           POSITION-VAL
           POSITION
+          SMOOTH-VAL
+          SMOOTH
+          MAXSPEED-VAL
+          MAXSPEED
           PRESENTSPEED-VAL
           PRESENTSPEED
           MOVING-VAL
@@ -15,4 +23,10 @@
           ENABLED
           POWER-VAL
           POWER
+          DEBUG1-VAL
+          DEBUG1
+          DEBUG2-VAL
+          DEBUG2
+          DEBUG3-VAL
+          DEBUG3
 ))

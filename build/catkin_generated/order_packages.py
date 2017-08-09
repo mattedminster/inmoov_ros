@@ -2,4 +2,4 @@
 source_root_dir = "/home/robot/inmoov_ros/src"
 whitelisted_packages = "".split(';') if "" != "" else []
 blacklisted_packages = "".split(';') if "" != "" else []
-underlay_workspaces = "/home/robot/inmoov_ros/devel;/opt/ros/kinetic".split(';') if "/home/robot/inmoov_ros/devel;/opt/ros/kinetic" != "" else []
+underlay_workspaces = "/home/robot/catkin_ws/devel;/home/robot/inmoov_ros/devel;/opt/ros/kinetic".split(';') if "/home/robot/catkin_ws/devel;/home/robot/inmoov_ros/devel;/opt/ros/kinetic" != "" else []

@@ -33,7 +33,9 @@
       <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
         <box size=".5715 .371475 .127"/>
+        <!--<mesh filename="package://inmoov_meshes/meshes/base.stl" scale="0.001 0.001 0.001"/>-->
       </geometry>
+      
     </visual>
 
 
@@ -89,6 +91,9 @@
 
   </link>
 
+  <link name="base_laser_link">
+
+  </link>
 
   <link name="left_wheel">
     <!--origin xyz="0.1 0.13 0.1" rpy="0 1.5707 1.5707"/-->
@@ -159,6 +164,11 @@
     <joint_properties damping="1.0" friction="1.0"/>
   </joint>
 
+    <joint name="laser_joint" type="fixed">
+<origin rpy="0 0 0" xyz="0 0 0"/>
+    <parent link="chassis"/>
+    <child link="base_laser_link"/>
+  </joint>
 
   
 

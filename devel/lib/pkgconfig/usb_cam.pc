@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/devel
+
+Name: usb_cam
+Description: Description of usb_cam
+Version: 0.3.4
+Cflags: -I/home/robot/inmoov_ros/src/usb_cam/include
+Libs: -L/home/robot/inmoov_ros/devel/lib -lusb_cam
+Requires: 

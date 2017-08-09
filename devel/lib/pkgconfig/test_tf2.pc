@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/devel
+
+Name: test_tf2
+Description: Description of test_tf2
+Version: 0.5.15
+Cflags: 
+Libs: -L/home/robot/inmoov_ros/devel/lib 
+Requires: 

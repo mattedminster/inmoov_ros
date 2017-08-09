@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/install
+
+Name: tf2_msgs
+Description: Description of tf2_msgs
+Version: 0.5.15
+Cflags: -I/home/robot/inmoov_ros/install/include
+Libs: -L/home/robot/inmoov_ros/install/lib 
+Requires: message_generation geometry_msgs actionlib_msgs

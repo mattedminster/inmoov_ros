@@ -1,0 +1,44 @@
+<launch>
+<group ns="inmoov/" >
+<rosparam file="$(find inmoov_bringup)/config/config.yaml"/>
+</group>
+
+<group ns="servobus/0" >
+  <node pkg="rosserial_python" type="serial_node.py" name="bus" respawn="true" output="screen">
+    <param name="port" value="/dev/arduinoleftarm"/>
+    <param name="baud" value="115200"/>
+  </node>
+</group>
+
+<group ns="servobus/1" >
+  <node pkg="rosserial_python" type="serial_node.py" name="bus" respawn="true" output="screen">
+    <param name="port" value="/dev/arduinorightarm"/>
+    <param name="baud" value="115200"/>
+  </node>
+</group>
+
+<include file="$(find realsense_camera)/launch/f200_nodelet_default.launch" />
+
+<node pkg="inmoov_bringup" type="joint_command_dispatcher.py" name="joint_command_dispatcher" respawn="true"/>
+
+<node pkg="inmoov_bringup" type="joint_status_dispatcher.py" name="joint_status_dispatcher" respawn="true" output="screen"/>
+
+<node pkg="inmoov_bringup" type="motor_status_dispatcher.py" name="motor_status_dispatcher" respawn="true"/>
+
+<node pkg="inmoov_neopixel_control" type="neopixel_command.py" name="neo_cmd" respawn="true"/>
+
+<include file="$(find inmoov_bringup)/launch/neo.launch" />
+<include file="$(find inmoov_bringup)/launch/ORK.launch" />
+
+<node pkg="inmoov_bringup" type="servo_init.py" name="servo_init" respawn="false"/>
+
+<!--<node pkg="inmoov_bringup" type="enable_manager.py" name="enable_manager" respawn="false"/>-->
+
+<node pkg="inmoov_moveit" type="inmoov_action_server.py" name="inmoov_action_server"  respawn="false"/>
+
+
+<include file="$(find inmoov_moveit_config)/launch/demo_test.launch" />
+
+<!--<node pkg="inmoov_bringup" type="rviz_manager.py" name="rviz_manager" respawn="true"/>-->
+
+</launch>

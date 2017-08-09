@@ -159,7 +159,7 @@ namespace serialization
       stream.next(m.pin);
     }
 
-    ROS_DECLARE_ALLINONE_SERIALIZER;
+    ROS_DECLARE_ALLINONE_SERIALIZER
   }; // struct DigitalReadRequest_
 
 } // namespace serialization

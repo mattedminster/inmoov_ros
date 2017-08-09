@@ -24,12 +24,12 @@ struct MotorCommand_
   typedef MotorCommand_<ContainerAllocator> Type;
 
   MotorCommand_()
-    : id(0)
+    : pin(0)
     , parameter(0)
     , value(0.0)  {
     }
   MotorCommand_(const ContainerAllocator& _alloc)
-    : id(0)
+    : pin(0)
     , parameter(0)
     , value(0.0)  {
   (void)_alloc;
@@ -37,8 +37,8 @@ struct MotorCommand_
 
 
 
-   typedef uint8_t _id_type;
-  _id_type id;
+   typedef int32_t _pin_type;
+  _pin_type pin;
 
    typedef uint8_t _parameter_type;
   _parameter_type parameter;
@@ -80,7 +80,7 @@ namespace message_traits
 
 
 // BOOLTRAITS {'IsFixedSize': True, 'IsMessage': True, 'HasHeader': False}
-// {'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'inmoov_msgs': ['/home/robot/inmoov_ros/src/inmoov_msgs/msg']}
+// {'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'inmoov_msgs': ['/home/robot/inmoov_ros/src/inmoov_msgs/msg'], 'geometry_msgs': ['/opt/ros/kinetic/share/geometry_msgs/cmake/../msg']}
 
 // !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
 
@@ -123,12 +123,12 @@ struct MD5Sum< ::inmoov_msgs::MotorCommand_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "eb0b08dd62a5eaff08551ecb80949ef6";
+    return "a3be74fad61fe1fa6f980c41406a4b63";
   }
 
   static const char* value(const ::inmoov_msgs::MotorCommand_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xeb0b08dd62a5eaffULL;
-  static const uint64_t static_value2 = 0x08551ecb80949ef6ULL;
+  static const uint64_t static_value1 = 0xa3be74fad61fe1faULL;
+  static const uint64_t static_value2 = 0x6f980c41406a4b63ULL;
 };
 
 template<class ContainerAllocator>
@@ -147,7 +147,7 @@ struct Definition< ::inmoov_msgs::MotorCommand_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "uint8   id                      # motor id\n\
+    return "int32   pin                      # motor id\n\
 uint8   parameter               # parameter\n\
 float32 value			# value\n\
 \n\
@@ -169,12 +169,12 @@ namespace serialization
   {
     template<typename Stream, typename T> inline static void allInOne(Stream& stream, T m)
     {
-      stream.next(m.id);
+      stream.next(m.pin);
       stream.next(m.parameter);
       stream.next(m.value);
     }
 
-    ROS_DECLARE_ALLINONE_SERIALIZER;
+    ROS_DECLARE_ALLINONE_SERIALIZER
   }; // struct MotorCommand_
 
 } // namespace serialization
@@ -190,8 +190,8 @@ struct Printer< ::inmoov_msgs::MotorCommand_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::inmoov_msgs::MotorCommand_<ContainerAllocator>& v)
   {
-    s << indent << "id: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.id);
+    s << indent << "pin: ";
+    Printer<int32_t>::stream(s, indent + "  ", v.pin);
     s << indent << "parameter: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.parameter);
     s << indent << "value: ";

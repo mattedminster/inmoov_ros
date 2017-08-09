@@ -56,6 +56,16 @@ CMAKE_BINARY_DIR = /home/robot/inmoov_ros/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"main\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -123,16 +133,6 @@ install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # The main all target
 all: cmake_check_build_system
 	cd /home/robot/inmoov_ros/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/robot/inmoov_ros/build/CMakeFiles /home/robot/inmoov_ros/build/rplidar_ros/CMakeFiles/progress.marks
@@ -164,306 +164,6 @@ preinstall/fast:
 depend:
 	cd /home/robot/inmoov_ros/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-# Convenience name for target.
-rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_py: rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_py
-
-# fast build rule for target.
-sensor_msgs_generate_messages_py/fast:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-.PHONY : sensor_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-rplidar_ros/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_py: rplidar_ros/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-.PHONY : roscpp_generate_messages_py
-
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f rplidar_ros/CMakeFiles/roscpp_generate_messages_py.dir/build.make rplidar_ros/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
-
-# Convenience name for target.
-rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_eus: rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_eus
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-.PHONY : rosgraph_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_nodejs: rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_eus: rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_eus
-
-# fast build rule for target.
-geometry_msgs_generate_messages_eus/fast:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
-.PHONY : geometry_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-rplidar_ros/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_cpp: rplidar_ros/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-.PHONY : roscpp_generate_messages_cpp
-
-# fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f rplidar_ros/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make rplidar_ros/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
-
-# Convenience name for target.
-rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_nodejs: rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-sensor_msgs_generate_messages_nodejs/fast:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
-.PHONY : sensor_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_cpp: rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_cpp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_cpp/fast:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-.PHONY : geometry_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-rplidar_ros/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_eus: rplidar_ros/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-.PHONY : roscpp_generate_messages_eus
-
-# fast build rule for target.
-roscpp_generate_messages_eus/fast:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f rplidar_ros/CMakeFiles/roscpp_generate_messages_eus.dir/build.make rplidar_ros/CMakeFiles/roscpp_generate_messages_eus.dir/build
-.PHONY : roscpp_generate_messages_eus/fast
-
-# Convenience name for target.
-rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_py: rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_py
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_lisp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-rplidar_ros/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_nodejs: rplidar_ros/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-
-.PHONY : roscpp_generate_messages_nodejs
-
-# fast build rule for target.
-roscpp_generate_messages_nodejs/fast:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f rplidar_ros/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make rplidar_ros/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
-.PHONY : roscpp_generate_messages_nodejs/fast
-
-# Convenience name for target.
-rplidar_ros/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_lisp: rplidar_ros/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-.PHONY : roscpp_generate_messages_lisp
-
-# fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f rplidar_ros/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make rplidar_ros/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
-
-# Convenience name for target.
-rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_cpp: rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_cpp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_cpp/fast:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
-.PHONY : sensor_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_eus: rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_eus
-
-# fast build rule for target.
-sensor_msgs_generate_messages_eus/fast:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
-.PHONY : sensor_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_lisp: rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_lisp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_lisp/fast:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-.PHONY : sensor_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_nodejs: rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-geometry_msgs_generate_messages_nodejs/fast:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
-.PHONY : geometry_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_py: rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_py
-
-# fast build rule for target.
-geometry_msgs_generate_messages_py/fast:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
-.PHONY : geometry_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_lisp: rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_lisp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_lisp/fast:
-	cd /home/robot/inmoov_ros/build && $(MAKE) -f rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-.PHONY : geometry_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 rplidar_ros/CMakeFiles/rplidarNode.dir/rule:
@@ -663,35 +363,15 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... list_install_components"
 	@echo "... install"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... install/local"
-	@echo "... install/strip"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... sensor_msgs_generate_messages_py"
-	@echo "... roscpp_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_eus"
-	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... geometry_msgs_generate_messages_eus"
-	@echo "... roscpp_generate_messages_cpp"
-	@echo "... sensor_msgs_generate_messages_nodejs"
-	@echo "... geometry_msgs_generate_messages_cpp"
-	@echo "... roscpp_generate_messages_eus"
-	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... roscpp_generate_messages_nodejs"
-	@echo "... roscpp_generate_messages_lisp"
-	@echo "... sensor_msgs_generate_messages_cpp"
-	@echo "... list_install_components"
-	@echo "... sensor_msgs_generate_messages_eus"
-	@echo "... sensor_msgs_generate_messages_lisp"
-	@echo "... geometry_msgs_generate_messages_nodejs"
-	@echo "... geometry_msgs_generate_messages_py"
-	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... rplidarNode"
 	@echo "... rplidarNodeClient"
+	@echo "... install/local"
+	@echo "... install/strip"
 	@echo "... sdk/src/arch/linux/net_serial.o"
 	@echo "... sdk/src/arch/linux/net_serial.i"
 	@echo "... sdk/src/arch/linux/net_serial.s"

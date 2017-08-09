@@ -1,0 +1,11 @@
+# CMake generated Testfile for 
+# Source directory: /home/robot/inmoov_ros/src/tabletop/test
+# Build directory: /home/robot/inmoov_ros/build/tabletop/test
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(object_recognition_tabletop_/home/robot/inmoov_ros/src/tabletop/test/../conf/detection.table.ros.ork "/home/robot/inmoov_ros/devel/share/object_recognition_core/cmake/../test/run_test.sh" "/home/robot/inmoov_ros/devel/setup.sh" "/home/robot/inmoov_ros/devel/share/object_recognition_core/cmake/../test/test_config.py -c /home/robot/inmoov_ros/src/tabletop/test/../conf/detection.table.ros.ork")
+add_test(object_recognition_tabletop_/home/robot/inmoov_ros/src/tabletop/test/../conf/detection.object.ros.ork "/home/robot/inmoov_ros/devel/share/object_recognition_core/cmake/../test/run_test.sh" "/home/robot/inmoov_ros/devel/setup.sh" "/home/robot/inmoov_ros/devel/share/object_recognition_core/cmake/../test/test_config.py -c /home/robot/inmoov_ros/src/tabletop/test/../conf/detection.object.ros.ork")
+add_test(object_recognition_tabletop_/home/robot/inmoov_ros/src/tabletop/test/../conf/detection.object.ork "/home/robot/inmoov_ros/devel/share/object_recognition_core/cmake/../test/run_test.sh" "/home/robot/inmoov_ros/devel/setup.sh" "/home/robot/inmoov_ros/devel/share/object_recognition_core/cmake/../test/test_config.py -c /home/robot/inmoov_ros/src/tabletop/test/../conf/detection.object.ork")
+add_test(object_recognition_tabletop_/home/robot/inmoov_ros/src/tabletop/test/../conf/detection.table.ork "/home/robot/inmoov_ros/devel/share/object_recognition_core/cmake/../test/run_test.sh" "/home/robot/inmoov_ros/devel/setup.sh" "/home/robot/inmoov_ros/devel/share/object_recognition_core/cmake/../test/test_config.py -c /home/robot/inmoov_ros/src/tabletop/test/../conf/detection.table.ork")
+add_test(object_recognition_tabletop_sink_TablePublisher "/home/robot/inmoov_ros/devel/share/object_recognition_core/cmake/../test/run_test.sh" "/home/robot/inmoov_ros/devel/setup.sh" "/home/robot/inmoov_ros/devel/share/object_recognition_core/cmake/../test/test_sink.py TablePublisher object_recognition_tabletop {}")

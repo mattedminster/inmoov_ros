@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/install
+
+Name: inmoov_moveit_config
+Description: Description of inmoov_moveit_config
+Version: 0.3.0
+Cflags: 
+Libs: -L/home/robot/inmoov_ros/install/lib 
+Requires: 

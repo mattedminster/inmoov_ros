@@ -1,0 +1,9 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~adaptive_thresh" : \b [bool] use adaptive thresholding to convert the image to black and white. min: False, default: False, max: True
+- \b "~normalize_image" : \b [bool] normalize the image gamma before applying thresholding. min: False, default: False, max: True
+- \b "~filter_quads" : \b [bool] use additional criteria to filter out false quads extracted at the contour retrieval stage. min: False, default: False, max: True
+- \b "~fast_check" : \b [bool] shortcut the call if none is found. min: False, default: False, max: True
+

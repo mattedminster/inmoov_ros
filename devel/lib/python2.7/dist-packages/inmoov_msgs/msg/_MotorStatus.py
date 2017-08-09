@@ -7,22 +7,29 @@ import struct
 
 
 class MotorStatus(genpy.Message):
-  _md5sum = "d4a9e09f5fbe6a9414f80ffc2b3c7dc9"
+  _md5sum = "9168929a0bdbdd12367c31a81e54ef98"
   _type = "inmoov_msgs/MotorStatus"
   _has_header = False #flag to mark the presence of a Header object
-  _full_text = """uint8    id             # motor id 0-11
-float32  goal		# command position
-float32  position	# current sensed position
-float32  presentspeed	# calculated rotational speed
-bool     moving		# is servo moving?
-uint16   posraw		# raw position sensor value
-bool     enabled	# is servo enabled?
-bool     power		# does servo have power?
+  _full_text = """string   joint          # joint name for status frame (populated in motor_status_dispatcher)
+uint8    bus            # bus source for status frame (populated in motor_status_dispatcher)
+uint8    servoPin       # motor id 0-11
+float32  goal           # command position
+float32  position       # current sensed position
+uint8    smooth         #smooth setting servo is set to
+float32  maxSpeed	#max speed setting
+float32  presentspeed   # calculated rotational speed
+bool     moving         # is servo moving?
+uint16   posraw         # raw position sensor value
+bool     enabled        # is servo enabled?
+bool     power          # does servo have power?
+float32  Debug1		#Debug 1
+float32  Debug2		#Debug 2
+float32  Debug3		#Debug 3
 
 
 """
-  __slots__ = ['id','goal','position','presentspeed','moving','posraw','enabled','power']
-  _slot_types = ['uint8','float32','float32','float32','bool','uint16','bool','bool']
+  __slots__ = ['joint','bus','servoPin','goal','position','smooth','maxSpeed','presentspeed','moving','posraw','enabled','power','Debug1','Debug2','Debug3']
+  _slot_types = ['string','uint8','uint8','float32','float32','uint8','float32','float32','bool','uint16','bool','bool','float32','float32','float32']
 
   def __init__(self, *args, **kwds):
     """
@@ -32,7 +39,7 @@ bool     power		# does servo have power?
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       id,goal,position,presentspeed,moving,posraw,enabled,power
+       joint,bus,servoPin,goal,position,smooth,maxSpeed,presentspeed,moving,posraw,enabled,power,Debug1,Debug2,Debug3
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -41,12 +48,20 @@ bool     power		# does servo have power?
     if args or kwds:
       super(MotorStatus, self).__init__(*args, **kwds)
       #message fields cannot be None, assign default values for those that are
-      if self.id is None:
-        self.id = 0
+      if self.joint is None:
+        self.joint = ''
+      if self.bus is None:
+        self.bus = 0
+      if self.servoPin is None:
+        self.servoPin = 0
       if self.goal is None:
         self.goal = 0.
       if self.position is None:
         self.position = 0.
+      if self.smooth is None:
+        self.smooth = 0
+      if self.maxSpeed is None:
+        self.maxSpeed = 0.
       if self.presentspeed is None:
         self.presentspeed = 0.
       if self.moving is None:
@@ -57,15 +72,28 @@ bool     power		# does servo have power?
         self.enabled = False
       if self.power is None:
         self.power = False
+      if self.Debug1 is None:
+        self.Debug1 = 0.
+      if self.Debug2 is None:
+        self.Debug2 = 0.
+      if self.Debug3 is None:
+        self.Debug3 = 0.
     else:
-      self.id = 0
+      self.joint = ''
+      self.bus = 0
+      self.servoPin = 0
       self.goal = 0.
       self.position = 0.
+      self.smooth = 0
+      self.maxSpeed = 0.
       self.presentspeed = 0.
       self.moving = False
       self.posraw = 0
       self.enabled = False
       self.power = False
+      self.Debug1 = 0.
+      self.Debug2 = 0.
+      self.Debug3 = 0.
 
   def _get_types(self):
     """
@@ -79,8 +107,14 @@ bool     power		# does servo have power?
     :param buff: buffer, ``StringIO``
     """
     try:
+      _x = self.joint
+      length = len(_x)
+      if python3 or type(_x) == unicode:
+        _x = _x.encode('utf-8')
+        length = len(_x)
+      buff.write(struct.pack('<I%ss'%length, length, _x))
       _x = self
-      buff.write(_get_struct_B3fBH2B().pack(_x.id, _x.goal, _x.position, _x.presentspeed, _x.moving, _x.posraw, _x.enabled, _x.power))
+      buff.write(_get_struct_2B2fB2fBH2B3f().pack(_x.bus, _x.servoPin, _x.goal, _x.position, _x.smooth, _x.maxSpeed, _x.presentspeed, _x.moving, _x.posraw, _x.enabled, _x.power, _x.Debug1, _x.Debug2, _x.Debug3))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -91,10 +125,19 @@ bool     power		# does servo have power?
     """
     try:
       end = 0
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      start = end
+      end += length
+      if python3:
+        self.joint = str[start:end].decode('utf-8')
+      else:
+        self.joint = str[start:end]
       _x = self
       start = end
-      end += 18
-      (_x.id, _x.goal, _x.position, _x.presentspeed, _x.moving, _x.posraw, _x.enabled, _x.power,) = _get_struct_B3fBH2B().unpack(str[start:end])
+      end += 36
+      (_x.bus, _x.servoPin, _x.goal, _x.position, _x.smooth, _x.maxSpeed, _x.presentspeed, _x.moving, _x.posraw, _x.enabled, _x.power, _x.Debug1, _x.Debug2, _x.Debug3,) = _get_struct_2B2fB2fBH2B3f().unpack(str[start:end])
       self.moving = bool(self.moving)
       self.enabled = bool(self.enabled)
       self.power = bool(self.power)
@@ -110,8 +153,14 @@ bool     power		# does servo have power?
     :param numpy: numpy python module
     """
     try:
+      _x = self.joint
+      length = len(_x)
+      if python3 or type(_x) == unicode:
+        _x = _x.encode('utf-8')
+        length = len(_x)
+      buff.write(struct.pack('<I%ss'%length, length, _x))
       _x = self
-      buff.write(_get_struct_B3fBH2B().pack(_x.id, _x.goal, _x.position, _x.presentspeed, _x.moving, _x.posraw, _x.enabled, _x.power))
+      buff.write(_get_struct_2B2fB2fBH2B3f().pack(_x.bus, _x.servoPin, _x.goal, _x.position, _x.smooth, _x.maxSpeed, _x.presentspeed, _x.moving, _x.posraw, _x.enabled, _x.power, _x.Debug1, _x.Debug2, _x.Debug3))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -123,10 +172,19 @@ bool     power		# does servo have power?
     """
     try:
       end = 0
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      start = end
+      end += length
+      if python3:
+        self.joint = str[start:end].decode('utf-8')
+      else:
+        self.joint = str[start:end]
       _x = self
       start = end
-      end += 18
-      (_x.id, _x.goal, _x.position, _x.presentspeed, _x.moving, _x.posraw, _x.enabled, _x.power,) = _get_struct_B3fBH2B().unpack(str[start:end])
+      end += 36
+      (_x.bus, _x.servoPin, _x.goal, _x.position, _x.smooth, _x.maxSpeed, _x.presentspeed, _x.moving, _x.posraw, _x.enabled, _x.power, _x.Debug1, _x.Debug2, _x.Debug3,) = _get_struct_2B2fB2fBH2B3f().unpack(str[start:end])
       self.moving = bool(self.moving)
       self.enabled = bool(self.enabled)
       self.power = bool(self.power)
@@ -138,9 +196,9 @@ _struct_I = genpy.struct_I
 def _get_struct_I():
     global _struct_I
     return _struct_I
-_struct_B3fBH2B = None
-def _get_struct_B3fBH2B():
-    global _struct_B3fBH2B
-    if _struct_B3fBH2B is None:
-        _struct_B3fBH2B = struct.Struct("<B3fBH2B")
-    return _struct_B3fBH2B
+_struct_2B2fB2fBH2B3f = None
+def _get_struct_2B2fB2fBH2B3f():
+    global _struct_2B2fB2fBH2B3f
+    if _struct_2B2fB2fBH2B3f is None:
+        _struct_2B2fB2fBH2B3f = struct.Struct("<2B2fB2fBH2B3f")
+    return _struct_2B2fB2fBH2B3f

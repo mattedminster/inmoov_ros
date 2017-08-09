@@ -1,0 +1,7 @@
+<launch>
+
+
+<node name="Inmoov_Demo_GUI" pkg="inmoov_tools" type="Inmoov_Demo_GUI.py" output="screen"/>
+
+
+</launch>

@@ -1,0 +1,4 @@
+# Any of the status request services description
+string caller
+---
+uint8 status

@@ -7,9 +7,9 @@
 ;//! \htmlinclude MotorParameter-request.msg.html
 
 (cl:defclass <MotorParameter-request> (roslisp-msg-protocol:ros-message)
-  ((id
-    :reader id
-    :initarg :id
+  ((pin
+    :reader pin
+    :initarg :pin
     :type cl:fixnum
     :initform 0)
    (parameter
@@ -27,10 +27,10 @@
   (cl:unless (cl:typep m 'MotorParameter-request)
     (roslisp-msg-protocol:msg-deprecation-warning "using old message class name inmoov_msgs-srv:<MotorParameter-request> is deprecated: use inmoov_msgs-srv:MotorParameter-request instead.")))
 
-(cl:ensure-generic-function 'id-val :lambda-list '(m))
-(cl:defmethod id-val ((m <MotorParameter-request>))
-  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader inmoov_msgs-srv:id-val is deprecated.  Use inmoov_msgs-srv:id instead.")
-  (id m))
+(cl:ensure-generic-function 'pin-val :lambda-list '(m))
+(cl:defmethod pin-val ((m <MotorParameter-request>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader inmoov_msgs-srv:pin-val is deprecated.  Use inmoov_msgs-srv:pin instead.")
+  (pin m))
 
 (cl:ensure-generic-function 'parameter-val :lambda-list '(m))
 (cl:defmethod parameter-val ((m <MotorParameter-request>))
@@ -38,12 +38,12 @@
   (parameter m))
 (cl:defmethod roslisp-msg-protocol:serialize ((msg <MotorParameter-request>) ostream)
   "Serializes a message object of type '<MotorParameter-request>"
-  (cl:write-byte (cl:ldb (cl:byte 8 0) (cl:slot-value msg 'id)) ostream)
+  (cl:write-byte (cl:ldb (cl:byte 8 0) (cl:slot-value msg 'pin)) ostream)
   (cl:write-byte (cl:ldb (cl:byte 8 0) (cl:slot-value msg 'parameter)) ostream)
 )
 (cl:defmethod roslisp-msg-protocol:deserialize ((msg <MotorParameter-request>) istream)
   "Deserializes a message object of type '<MotorParameter-request>"
-    (cl:setf (cl:ldb (cl:byte 8 0) (cl:slot-value msg 'id)) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 0) (cl:slot-value msg 'pin)) (cl:read-byte istream))
     (cl:setf (cl:ldb (cl:byte 8 0) (cl:slot-value msg 'parameter)) (cl:read-byte istream))
   msg
 )
@@ -55,16 +55,16 @@
   "inmoov_msgs/MotorParameterRequest")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<MotorParameter-request>)))
   "Returns md5sum for a message object of type '<MotorParameter-request>"
-  "97de38f733bf57ad772faf1928f3cb93")
+  "5f77ee216d4d41fb39b36b0a0436a53b")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'MotorParameter-request)))
   "Returns md5sum for a message object of type 'MotorParameter-request"
-  "97de38f733bf57ad772faf1928f3cb93")
+  "5f77ee216d4d41fb39b36b0a0436a53b")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<MotorParameter-request>)))
   "Returns full string definition for message of type '<MotorParameter-request>"
-  (cl:format cl:nil "uint8   id~%uint8   parameter~%~%~%"))
+  (cl:format cl:nil "uint8   pin~%uint8   parameter~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'MotorParameter-request)))
   "Returns full string definition for message of type 'MotorParameter-request"
-  (cl:format cl:nil "uint8   id~%uint8   parameter~%~%~%"))
+  (cl:format cl:nil "uint8   pin~%uint8   parameter~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <MotorParameter-request>))
   (cl:+ 0
      1
@@ -73,7 +73,7 @@
 (cl:defmethod roslisp-msg-protocol:ros-message-to-list ((msg <MotorParameter-request>))
   "Converts a ROS message object to a list"
   (cl:list 'MotorParameter-request
-    (cl:cons ':id (id msg))
+    (cl:cons ':pin (pin msg))
     (cl:cons ':parameter (parameter msg))
 ))
 ;//! \htmlinclude MotorParameter-response.msg.html
@@ -124,10 +124,10 @@
   "inmoov_msgs/MotorParameterResponse")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<MotorParameter-response>)))
   "Returns md5sum for a message object of type '<MotorParameter-response>"
-  "97de38f733bf57ad772faf1928f3cb93")
+  "5f77ee216d4d41fb39b36b0a0436a53b")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'MotorParameter-response)))
   "Returns md5sum for a message object of type 'MotorParameter-response"
-  "97de38f733bf57ad772faf1928f3cb93")
+  "5f77ee216d4d41fb39b36b0a0436a53b")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<MotorParameter-response>)))
   "Returns full string definition for message of type '<MotorParameter-response>"
   (cl:format cl:nil "float32 data~%~%~%~%"))

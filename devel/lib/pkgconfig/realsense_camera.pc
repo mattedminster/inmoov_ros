@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/devel
+
+Name: realsense_camera
+Description: Description of realsense_camera
+Version: 1.8.0
+Cflags: -I/home/robot/inmoov_ros/devel/include -I/home/robot/inmoov_ros/src/realsense/realsense_camera/include
+Libs: -L/home/robot/inmoov_ros/devel/lib -lrealsense_camera_nodelet
+Requires: std_msgs message_runtime sensor_msgs librealsense

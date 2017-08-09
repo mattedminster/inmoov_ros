@@ -1,20 +1,20 @@
 
 "use strict";
 
-let AnalogWrite = require('./AnalogWrite.js')
+let ServoRead = require('./ServoRead.js')
+let ServoWrite = require('./ServoWrite.js')
+let DigitalSetDirection = require('./DigitalSetDirection.js')
 let DigitalWrite = require('./DigitalWrite.js')
 let DigitalRead = require('./DigitalRead.js')
-let ServoWrite = require('./ServoWrite.js')
-let ServoRead = require('./ServoRead.js')
-let DigitalSetDirection = require('./DigitalSetDirection.js')
+let AnalogWrite = require('./AnalogWrite.js')
 let AnalogRead = require('./AnalogRead.js')
 
 module.exports = {
-  AnalogWrite: AnalogWrite,
+  ServoRead: ServoRead,
+  ServoWrite: ServoWrite,
+  DigitalSetDirection: DigitalSetDirection,
   DigitalWrite: DigitalWrite,
   DigitalRead: DigitalRead,
-  ServoWrite: ServoWrite,
-  ServoRead: ServoRead,
-  DigitalSetDirection: DigitalSetDirection,
+  AnalogWrite: AnalogWrite,
   AnalogRead: AnalogRead,
 };

@@ -36,11 +36,26 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/inmoov_msgs/msg" TYPE FILE FILES
     "/home/robot/inmoov_ros/src/inmoov_msgs/msg/MotorCommand.msg"
     "/home/robot/inmoov_ros/src/inmoov_msgs/msg/MotorStatus.msg"
+    "/home/robot/inmoov_ros/src/inmoov_msgs/msg/ServoSetup.msg"
+    "/home/robot/inmoov_ros/src/inmoov_msgs/msg/NeoPixel.msg"
+    "/home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapPointable.msg"
+    "/home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapHand.msg"
+    "/home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapGesture.msg"
+    "/home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapFrame.msg"
+    "/home/robot/inmoov_ros/src/inmoov_msgs/msg/Status.msg"
+    "/home/robot/inmoov_ros/src/inmoov_msgs/msg/NeoPixel_command.msg"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/inmoov_msgs/srv" TYPE FILE FILES "/home/robot/inmoov_ros/src/inmoov_msgs/srv/MotorParameter.srv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/inmoov_msgs/srv" TYPE FILE FILES
+    "/home/robot/inmoov_ros/src/inmoov_msgs/srv/MotorParameter.srv"
+    "/home/robot/inmoov_ros/src/inmoov_msgs/srv/inmoov_voice.srv"
+    "/home/robot/inmoov_ros/src/inmoov_msgs/srv/RPS.srv"
+    "/home/robot/inmoov_ros/src/inmoov_msgs/srv/inmoov_sound_play.srv"
+    "/home/robot/inmoov_ros/src/inmoov_msgs/srv/RequestStatus.srv"
+    "/home/robot/inmoov_ros/src/inmoov_msgs/srv/NeoPixelSetBrightness.srv"
+    )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")

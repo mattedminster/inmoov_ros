@@ -7,13 +7,13 @@ import struct
 
 
 class MotorParameterRequest(genpy.Message):
-  _md5sum = "e50bd98c68b747be3e6ef47cccff3aad"
+  _md5sum = "82505794a8745f1d30c991413d22b7eb"
   _type = "inmoov_msgs/MotorParameterRequest"
   _has_header = False #flag to mark the presence of a Header object
-  _full_text = """uint8   id
+  _full_text = """uint8   pin
 uint8   parameter
 """
-  __slots__ = ['id','parameter']
+  __slots__ = ['pin','parameter']
   _slot_types = ['uint8','uint8']
 
   def __init__(self, *args, **kwds):
@@ -24,7 +24,7 @@ uint8   parameter
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       id,parameter
+       pin,parameter
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -33,12 +33,12 @@ uint8   parameter
     if args or kwds:
       super(MotorParameterRequest, self).__init__(*args, **kwds)
       #message fields cannot be None, assign default values for those that are
-      if self.id is None:
-        self.id = 0
+      if self.pin is None:
+        self.pin = 0
       if self.parameter is None:
         self.parameter = 0
     else:
-      self.id = 0
+      self.pin = 0
       self.parameter = 0
 
   def _get_types(self):
@@ -54,7 +54,7 @@ uint8   parameter
     """
     try:
       _x = self
-      buff.write(_get_struct_2B().pack(_x.id, _x.parameter))
+      buff.write(_get_struct_2B().pack(_x.pin, _x.parameter))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -68,7 +68,7 @@ uint8   parameter
       _x = self
       start = end
       end += 2
-      (_x.id, _x.parameter,) = _get_struct_2B().unpack(str[start:end])
+      (_x.pin, _x.parameter,) = _get_struct_2B().unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -82,7 +82,7 @@ uint8   parameter
     """
     try:
       _x = self
-      buff.write(_get_struct_2B().pack(_x.id, _x.parameter))
+      buff.write(_get_struct_2B().pack(_x.pin, _x.parameter))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -97,7 +97,7 @@ uint8   parameter
       _x = self
       start = end
       end += 2
-      (_x.id, _x.parameter,) = _get_struct_2B().unpack(str[start:end])
+      (_x.pin, _x.parameter,) = _get_struct_2B().unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -221,6 +221,6 @@ def _get_struct_f():
     return _struct_f
 class MotorParameter(object):
   _type          = 'inmoov_msgs/MotorParameter'
-  _md5sum = '97de38f733bf57ad772faf1928f3cb93'
+  _md5sum = '5f77ee216d4d41fb39b36b0a0436a53b'
   _request_class  = MotorParameterRequest
   _response_class = MotorParameterResponse

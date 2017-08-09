@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/devel
+
+Name: moveit_ros_manipulation
+Description: Description of moveit_ros_manipulation
+Version: 0.9.7
+Cflags: -I/home/robot/inmoov_ros/devel/include -I/home/robot/inmoov_ros/src/moveit/moveit_ros/manipulation/pick_place/include -I/home/robot/inmoov_ros/src/moveit/moveit_ros/manipulation/move_group_pick_place_capability/include -I/usr/include/eigen3
+Libs: -L/home/robot/inmoov_ros/devel/lib -lmoveit_pick_place_planner
+Requires: moveit_core moveit_ros_planning

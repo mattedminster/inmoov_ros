@@ -1,0 +1,8 @@
+<launch>
+
+
+<include file="$(find kinect2_bridge)/launch/kinect2_bridge.launch" />
+<include file="$(find cob_people_detection)/ros/launch/people_detection.launch" />
+
+
+</launch>

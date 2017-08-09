@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<robot name="inmoov" xmlns:xacro="http://ros.org/wiki/xacro">
+
+<xacro:include filename="$(find inmoov_description)/urdf/materials.urdf.xacro" />
+<xacro:include filename="$(find inmoov_description)/urdf/config.urdf.xacro" />
+
+  <xacro:include filename="$(find inmoov_description)/urdf/materials.urdf.xacro" />
+  
+ 
+  <xacro:include filename="$(find inmoov_description)/urdf/asmArm.urdf.xacro" />
+  <xacro:include filename="$(find inmoov_description)/urdf/asmHand.urdf.xacro" />
+
+  <link name="torso_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://inmoov_meshes/meshes/torso.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <xacro:frame_color/>
+    </visual>
+  </link>
+
+  <xacro:arm side="r" flip="1" covers="yes" />
+
+  <joint name="r_shoulder_out_joint" type="revolute">
+   <axis xyz="1 0 0"/>
+   <limit effort="1000.0" lower="${r_shoulder_out_joint_lower}" upper="${r_shoulder_out_joint_upper}" velocity="${r_shoulder_out_joint_velocity}" />
+   <origin rpy="0 0 0" xyz="0 -0.143 0.298"/>
+   <parent link="torso_link"/>
+   <child link="r_shoulder_base_link"/>
+  </joint>
+
+  <xacro:hand side="r" flip="1" covers="yes" />
+
+  <joint name="r_wrist_roll_joint" type="revolute">
+   <axis xyz="0 0 1"/>
+   <limit effort="1000.0" lower="${r_wrist_roll_joint_lower}" upper="${r_wrist_roll_joint_upper}" velocity="${r_wrist_roll_joint_velocity}" />
+   <origin rpy="0 0 0" xyz="-0.0144 0.01  -0.2885"/>
+   <parent link="r_forearm_link"/>
+   <child link="r_hand_link"/>
+  </joint>
+
+  
+
+</robot>
+

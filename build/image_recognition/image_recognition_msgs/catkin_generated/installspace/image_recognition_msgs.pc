@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/install
+
+Name: image_recognition_msgs
+Description: Description of image_recognition_msgs
+Version: 0.0.4
+Cflags: -I/home/robot/inmoov_ros/install/include
+Libs: -L/home/robot/inmoov_ros/install/lib 
+Requires: message_generation sensor_msgs

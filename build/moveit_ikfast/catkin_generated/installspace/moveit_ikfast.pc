@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/install
+
+Name: moveit_ikfast
+Description: Description of moveit_ikfast
+Version: 3.1.0
+Cflags: 
+Libs: -L/home/robot/inmoov_ros/install/lib 
+Requires: 

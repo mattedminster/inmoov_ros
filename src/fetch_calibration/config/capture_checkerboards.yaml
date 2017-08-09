@@ -1,0 +1,19 @@
+chains:
+  - name: right_arm
+    topic: /follow_joint_trajectory
+    joints:
+     - waist_pan_joint
+     - waist_roll_joint
+     - r_shoulder_out_joint
+     - r_shoulder_lift_joint
+     - r_upper_arm_roll_joint
+     - r_elbow_flex_joint
+     - r_wrist_roll_joint
+    planning_group: right_arm
+duration: 2.0
+features:
+  checkerboard_finder:
+    type: robot_calibration/CheckerboardFinder
+    topic: /camera/depth/points
+    camera_sensor_name: camera
+    chain_sensor_name: right_arm

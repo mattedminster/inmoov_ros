@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/devel
+
+Name: checkerboard_detector
+Description: Description of checkerboard_detector
+Version: 1.2.2
+Cflags: -I/home/robot/inmoov_ros/devel/include
+Libs: -L/home/robot/inmoov_ros/devel/lib 
+Requires: roscpp rosconsole cv_bridge sensor_msgs posedetection_msgs image_geometry jsk_recognition_msgs

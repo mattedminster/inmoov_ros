@@ -53,34 +53,155 @@ CMAKE_BINARY_DIR = /home/robot/inmoov_ros/build
 # Include the progress variables for this target.
 include inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_cpp.dir/progress.make
 
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/NeoPixel.h
 inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/MotorCommand.h
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapFrame.h
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/Status.h
 inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/MotorStatus.h
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/NeoPixel_command.h
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapHand.h
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/ServoSetup.h
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapPointable.h
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapGesture.h
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/NeoPixelSetBrightness.h
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/inmoov_voice.h
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/RequestStatus.h
 inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/MotorParameter.h
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/RPS.h
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/inmoov_sound_play.h
 
+
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/NeoPixel.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/NeoPixel.h: /home/robot/inmoov_ros/src/inmoov_msgs/msg/NeoPixel.msg
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/NeoPixel.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from inmoov_msgs/NeoPixel.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/NeoPixel.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/include/inmoov_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 /home/robot/inmoov_ros/devel/include/inmoov_msgs/MotorCommand.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
 /home/robot/inmoov_ros/devel/include/inmoov_msgs/MotorCommand.h: /home/robot/inmoov_ros/src/inmoov_msgs/msg/MotorCommand.msg
 /home/robot/inmoov_ros/devel/include/inmoov_msgs/MotorCommand.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from inmoov_msgs/MotorCommand.msg"
-	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/MotorCommand.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/include/inmoov_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from inmoov_msgs/MotorCommand.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/MotorCommand.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/include/inmoov_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapFrame.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapFrame.h: /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapFrame.msg
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapFrame.h: /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapPointable.msg
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapFrame.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapFrame.h: /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapGesture.msg
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapFrame.h: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapFrame.h: /opt/ros/kinetic/share/geometry_msgs/msg/Vector3.msg
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapFrame.h: /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapHand.msg
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapFrame.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from inmoov_msgs/LeapFrame.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapFrame.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/include/inmoov_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/Status.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/Status.h: /home/robot/inmoov_ros/src/inmoov_msgs/msg/Status.msg
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/Status.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from inmoov_msgs/Status.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/Status.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/include/inmoov_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 /home/robot/inmoov_ros/devel/include/inmoov_msgs/MotorStatus.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
 /home/robot/inmoov_ros/devel/include/inmoov_msgs/MotorStatus.h: /home/robot/inmoov_ros/src/inmoov_msgs/msg/MotorStatus.msg
 /home/robot/inmoov_ros/devel/include/inmoov_msgs/MotorStatus.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from inmoov_msgs/MotorStatus.msg"
-	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/MotorStatus.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/include/inmoov_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating C++ code from inmoov_msgs/MotorStatus.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/MotorStatus.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/include/inmoov_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/NeoPixel_command.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/NeoPixel_command.h: /home/robot/inmoov_ros/src/inmoov_msgs/msg/NeoPixel_command.msg
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/NeoPixel_command.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating C++ code from inmoov_msgs/NeoPixel_command.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/NeoPixel_command.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/include/inmoov_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapHand.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapHand.h: /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapHand.msg
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapHand.h: /opt/ros/kinetic/share/geometry_msgs/msg/Vector3.msg
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapHand.h: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapHand.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating C++ code from inmoov_msgs/LeapHand.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapHand.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/include/inmoov_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/ServoSetup.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/ServoSetup.h: /home/robot/inmoov_ros/src/inmoov_msgs/msg/ServoSetup.msg
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/ServoSetup.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating C++ code from inmoov_msgs/ServoSetup.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/ServoSetup.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/include/inmoov_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapPointable.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapPointable.h: /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapPointable.msg
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapPointable.h: /opt/ros/kinetic/share/geometry_msgs/msg/Vector3.msg
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapPointable.h: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapPointable.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating C++ code from inmoov_msgs/LeapPointable.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapPointable.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/include/inmoov_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapGesture.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapGesture.h: /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapGesture.msg
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapGesture.h: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapGesture.h: /opt/ros/kinetic/share/geometry_msgs/msg/Vector3.msg
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapGesture.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating C++ code from inmoov_msgs/LeapGesture.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapGesture.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/include/inmoov_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/NeoPixelSetBrightness.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/NeoPixelSetBrightness.h: /home/robot/inmoov_ros/src/inmoov_msgs/srv/NeoPixelSetBrightness.srv
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/NeoPixelSetBrightness.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/NeoPixelSetBrightness.h: /opt/ros/kinetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating C++ code from inmoov_msgs/NeoPixelSetBrightness.srv"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robot/inmoov_ros/src/inmoov_msgs/srv/NeoPixelSetBrightness.srv -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/include/inmoov_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/inmoov_voice.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/inmoov_voice.h: /home/robot/inmoov_ros/src/inmoov_msgs/srv/inmoov_voice.srv
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/inmoov_voice.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/inmoov_voice.h: /opt/ros/kinetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating C++ code from inmoov_msgs/inmoov_voice.srv"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robot/inmoov_ros/src/inmoov_msgs/srv/inmoov_voice.srv -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/include/inmoov_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/RequestStatus.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/RequestStatus.h: /home/robot/inmoov_ros/src/inmoov_msgs/srv/RequestStatus.srv
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/RequestStatus.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/RequestStatus.h: /opt/ros/kinetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating C++ code from inmoov_msgs/RequestStatus.srv"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robot/inmoov_ros/src/inmoov_msgs/srv/RequestStatus.srv -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/include/inmoov_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 /home/robot/inmoov_ros/devel/include/inmoov_msgs/MotorParameter.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
 /home/robot/inmoov_ros/devel/include/inmoov_msgs/MotorParameter.h: /home/robot/inmoov_ros/src/inmoov_msgs/srv/MotorParameter.srv
 /home/robot/inmoov_ros/devel/include/inmoov_msgs/MotorParameter.h: /opt/ros/kinetic/share/gencpp/msg.h.template
 /home/robot/inmoov_ros/devel/include/inmoov_msgs/MotorParameter.h: /opt/ros/kinetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from inmoov_msgs/MotorParameter.srv"
-	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robot/inmoov_ros/src/inmoov_msgs/srv/MotorParameter.srv -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/include/inmoov_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating C++ code from inmoov_msgs/MotorParameter.srv"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robot/inmoov_ros/src/inmoov_msgs/srv/MotorParameter.srv -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/include/inmoov_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/RPS.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/RPS.h: /home/robot/inmoov_ros/src/inmoov_msgs/srv/RPS.srv
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/RPS.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/RPS.h: /opt/ros/kinetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating C++ code from inmoov_msgs/RPS.srv"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robot/inmoov_ros/src/inmoov_msgs/srv/RPS.srv -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/include/inmoov_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/inmoov_sound_play.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/inmoov_sound_play.h: /home/robot/inmoov_ros/src/inmoov_msgs/srv/inmoov_sound_play.srv
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/inmoov_sound_play.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+/home/robot/inmoov_ros/devel/include/inmoov_msgs/inmoov_sound_play.h: /opt/ros/kinetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating C++ code from inmoov_msgs/inmoov_sound_play.srv"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robot/inmoov_ros/src/inmoov_msgs/srv/inmoov_sound_play.srv -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/include/inmoov_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 inmoov_msgs_generate_messages_cpp: inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_cpp
+inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/NeoPixel.h
 inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/MotorCommand.h
+inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapFrame.h
+inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/Status.h
 inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/MotorStatus.h
+inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/NeoPixel_command.h
+inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapHand.h
+inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/ServoSetup.h
+inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapPointable.h
+inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/LeapGesture.h
+inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/NeoPixelSetBrightness.h
+inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/inmoov_voice.h
+inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/RequestStatus.h
 inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/MotorParameter.h
+inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/RPS.h
+inmoov_msgs_generate_messages_cpp: /home/robot/inmoov_ros/devel/include/inmoov_msgs/inmoov_sound_play.h
 inmoov_msgs_generate_messages_cpp: inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_cpp.dir/build.make
 
 .PHONY : inmoov_msgs_generate_messages_cpp

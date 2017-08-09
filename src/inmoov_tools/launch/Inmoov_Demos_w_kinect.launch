@@ -1,0 +1,20 @@
+<launch>
+
+<!--<include file="$(find kinect2_bridge)/launch/kinect2_bridge.launch" />-->
+<!--<node name="voice_service" pkg="inmoov_bringup" type="inmoov_voice_service.py" respawn="true" output="screen"/>
+
+<node name="play_sound_service" pkg="inmoov_bringup" type="inmoov_sound_play_service.py" respawn="true" output="screen"/>
+
+<node name="mouth_movements" pkg="inmoov_bringup" type="inmoov_mouth_movements.py" respawn="true" output="screen"/>
+
+<node name="inmoov_leapmotion" pkg="inmoov_leapmotion" type="inmoov_leap_srv" respawn="true" />-->
+
+<node name="image_saver" pkg="image_view" type="image_saver" respawn="true" output="screen">
+<arg name="image" value="/kinect2/hd/image_color"/>
+<arg name="_save_all_image" value="false"/>
+<arg name="_filename_format" value="/tmp/k_image.jpg"/>
+</node>
+
+<!--<node name="inmoov_demos" pkg="inmoov_tools" type="Inmoov_Demos.py" respawn="true" output="screen"/>-->
+
+</launch>

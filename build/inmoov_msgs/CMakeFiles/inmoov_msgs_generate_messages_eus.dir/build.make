@@ -53,35 +53,138 @@ CMAKE_BINARY_DIR = /home/robot/inmoov_ros/build
 # Include the progress variables for this target.
 include inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_eus.dir/progress.make
 
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/NeoPixel.l
 inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/MotorCommand.l
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/LeapFrame.l
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/Status.l
 inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/MotorStatus.l
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/NeoPixel_command.l
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/LeapHand.l
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/ServoSetup.l
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/LeapPointable.l
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/LeapGesture.l
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv/NeoPixelSetBrightness.l
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv/inmoov_voice.l
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv/RequestStatus.l
 inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv/MotorParameter.l
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv/RPS.l
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv/inmoov_sound_play.l
 inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/manifest.l
 
 
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/NeoPixel.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/NeoPixel.l: /home/robot/inmoov_ros/src/inmoov_msgs/msg/NeoPixel.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from inmoov_msgs/NeoPixel.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/NeoPixel.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg
+
 /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/MotorCommand.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
 /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/MotorCommand.l: /home/robot/inmoov_ros/src/inmoov_msgs/msg/MotorCommand.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from inmoov_msgs/MotorCommand.msg"
-	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/MotorCommand.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from inmoov_msgs/MotorCommand.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/MotorCommand.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg
+
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/LeapFrame.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/LeapFrame.l: /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapFrame.msg
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/LeapFrame.l: /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapPointable.msg
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/LeapFrame.l: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/LeapFrame.l: /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapGesture.msg
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/LeapFrame.l: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/LeapFrame.l: /opt/ros/kinetic/share/geometry_msgs/msg/Vector3.msg
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/LeapFrame.l: /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapHand.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from inmoov_msgs/LeapFrame.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapFrame.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg
+
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/Status.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/Status.l: /home/robot/inmoov_ros/src/inmoov_msgs/msg/Status.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp code from inmoov_msgs/Status.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/Status.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg
 
 /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/MotorStatus.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
 /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/MotorStatus.l: /home/robot/inmoov_ros/src/inmoov_msgs/msg/MotorStatus.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from inmoov_msgs/MotorStatus.msg"
-	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/MotorStatus.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp code from inmoov_msgs/MotorStatus.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/MotorStatus.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg
+
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/NeoPixel_command.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/NeoPixel_command.l: /home/robot/inmoov_ros/src/inmoov_msgs/msg/NeoPixel_command.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating EusLisp code from inmoov_msgs/NeoPixel_command.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/NeoPixel_command.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg
+
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/LeapHand.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/LeapHand.l: /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapHand.msg
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/LeapHand.l: /opt/ros/kinetic/share/geometry_msgs/msg/Vector3.msg
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/LeapHand.l: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating EusLisp code from inmoov_msgs/LeapHand.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapHand.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg
+
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/ServoSetup.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/ServoSetup.l: /home/robot/inmoov_ros/src/inmoov_msgs/msg/ServoSetup.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating EusLisp code from inmoov_msgs/ServoSetup.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/ServoSetup.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg
+
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/LeapPointable.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/LeapPointable.l: /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapPointable.msg
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/LeapPointable.l: /opt/ros/kinetic/share/geometry_msgs/msg/Vector3.msg
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/LeapPointable.l: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating EusLisp code from inmoov_msgs/LeapPointable.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapPointable.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg
+
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/LeapGesture.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/LeapGesture.l: /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapGesture.msg
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/LeapGesture.l: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/LeapGesture.l: /opt/ros/kinetic/share/geometry_msgs/msg/Vector3.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating EusLisp code from inmoov_msgs/LeapGesture.msg"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapGesture.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg
+
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv/NeoPixelSetBrightness.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv/NeoPixelSetBrightness.l: /home/robot/inmoov_ros/src/inmoov_msgs/srv/NeoPixelSetBrightness.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating EusLisp code from inmoov_msgs/NeoPixelSetBrightness.srv"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/robot/inmoov_ros/src/inmoov_msgs/srv/NeoPixelSetBrightness.srv -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv
+
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv/inmoov_voice.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv/inmoov_voice.l: /home/robot/inmoov_ros/src/inmoov_msgs/srv/inmoov_voice.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating EusLisp code from inmoov_msgs/inmoov_voice.srv"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/robot/inmoov_ros/src/inmoov_msgs/srv/inmoov_voice.srv -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv
+
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv/RequestStatus.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv/RequestStatus.l: /home/robot/inmoov_ros/src/inmoov_msgs/srv/RequestStatus.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating EusLisp code from inmoov_msgs/RequestStatus.srv"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/robot/inmoov_ros/src/inmoov_msgs/srv/RequestStatus.srv -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv
 
 /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv/MotorParameter.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
 /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv/MotorParameter.l: /home/robot/inmoov_ros/src/inmoov_msgs/srv/MotorParameter.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from inmoov_msgs/MotorParameter.srv"
-	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/robot/inmoov_ros/src/inmoov_msgs/srv/MotorParameter.srv -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating EusLisp code from inmoov_msgs/MotorParameter.srv"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/robot/inmoov_ros/src/inmoov_msgs/srv/MotorParameter.srv -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv
+
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv/RPS.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv/RPS.l: /home/robot/inmoov_ros/src/inmoov_msgs/srv/RPS.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating EusLisp code from inmoov_msgs/RPS.srv"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/robot/inmoov_ros/src/inmoov_msgs/srv/RPS.srv -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv
+
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv/inmoov_sound_play.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv/inmoov_sound_play.l: /home/robot/inmoov_ros/src/inmoov_msgs/srv/inmoov_sound_play.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating EusLisp code from inmoov_msgs/inmoov_sound_play.srv"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/robot/inmoov_ros/src/inmoov_msgs/srv/inmoov_sound_play.srv -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv
 
 /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/manifest.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp manifest code for inmoov_msgs"
-	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs inmoov_msgs std_msgs
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating EusLisp manifest code for inmoov_msgs"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs inmoov_msgs std_msgs geometry_msgs
 
 inmoov_msgs_generate_messages_eus: inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_eus
+inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/NeoPixel.l
 inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/MotorCommand.l
+inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/LeapFrame.l
+inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/Status.l
 inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/MotorStatus.l
+inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/NeoPixel_command.l
+inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/LeapHand.l
+inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/ServoSetup.l
+inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/LeapPointable.l
+inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/msg/LeapGesture.l
+inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv/NeoPixelSetBrightness.l
+inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv/inmoov_voice.l
+inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv/RequestStatus.l
 inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv/MotorParameter.l
+inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv/RPS.l
+inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/srv/inmoov_sound_play.l
 inmoov_msgs_generate_messages_eus: /home/robot/inmoov_ros/devel/share/roseus/ros/inmoov_msgs/manifest.l
 inmoov_msgs_generate_messages_eus: inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_eus.dir/build.make
 

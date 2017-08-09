@@ -1,0 +1,69 @@
+<launch>
+<group ns="inmoov/" >
+<rosparam file="$(find inmoov_bringup)/config/config.yaml"/>
+</group>
+
+<group ns="servobus/0" >
+  <node pkg="rosserial_python" type="serial_node.py" name="bus" respawn="true" output="screen">
+    <param name="port" value="/dev/arduinoleftarm"/>
+    <param name="baud" value="115200"/>
+  </node>
+</group>
+
+<group ns="servobus/1" >
+  <node pkg="rosserial_python" type="serial_node.py" name="bus" respawn="true" output="screen">
+    <param name="port" value="/dev/arduinorightarm"/>
+    <param name="baud" value="115200"/>
+  </node>
+</group>
+
+  <include file="$(find inmoov_moveit_config)/launch/planning_context.launch">
+    <arg name="load_robot_description" value="false"/>
+  </include>
+
+ <!-- If needed, broadcast static tf for robot root -->
+ <node pkg="tf" type="static_transform_publisher" name="virtual_joint_broadcaster_0" args="0 0 0 0 0 0 odom base_link 100" />
+
+<param name="robot_description" command="$(find xacro)/xacro.py $(find inmoov_description)/robots/calibrated.urdf" />
+
+<include file="$(find realsense_camera)/launch/f200_nodelet_5fps.launch" />
+
+
+
+<node pkg="inmoov_bringup" type="joint_command_dispatcher.py" name="joint_command_dispatcher" output="screen" respawn="true"/>
+
+<node pkg="inmoov_bringup" type="joint_status_dispatcher.py" name="joint_status_dispatcher" respawn="true" output="screen"/>
+
+<node pkg="inmoov_bringup" type="motor_status_dispatcher.py" name="motor_status_dispatcher" respawn="true" output="screen"/>
+
+<node pkg="inmoov_neopixel_control" type="neopixel_command.py" name="neo_cmd" respawn="true"/>
+
+<include file="$(find inmoov_bringup)/launch/neo.launch" />
+<include file="$(find inmoov_bringup)/launch/ORK.launch" />
+
+<node pkg="inmoov_bringup" type="servo_init.py" name="servo_init" respawn="false" output="screen"/>
+
+<node pkg="inmoov_bringup" type="enable_manager.py" name="enable_manager" respawn="false"/>
+
+ <!-- Given the published joint states, publish tf for the robot links -->
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" />
+
+
+<node pkg="inmoov_moveit" type="inmoov_action_server.py" name="inmoov_action_server"  output="screen" respawn="false"/>
+
+<!-- Run the main MoveIt executable without trajectory execution (we do not have controllers configured by default) -->
+  <include file="$(find inmoov_moveit_config)/launch/move_group.launch">
+    <arg name="allow_trajectory_execution" value="true"/>  
+    <!--<arg name="fake_execution" value="true"/>-->
+    <arg name="info" value="true"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+  <include file="$(find inmoov_moveit_config)/launch/moveit_rviz.launch">
+    <arg name="config" value="true"/>
+
+  </include>
+
+<!--<include file="$(find moveit_grasps)/launch/test_grasp_generator.launch" />-->
+
+</launch>

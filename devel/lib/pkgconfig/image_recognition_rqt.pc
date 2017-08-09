@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/devel
+
+Name: image_recognition_rqt
+Description: Description of image_recognition_rqt
+Version: 0.0.4
+Cflags: 
+Libs: -L/home/robot/inmoov_ros/devel/lib 
+Requires: 

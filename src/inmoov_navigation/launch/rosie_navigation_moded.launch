@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<launch>
+  <master auto="start"/>
+
+ <param name="robot_description" command="$(find xacro)/xacro.py '$(find inmoov_description)/robots/inmoov_base.urdf.xacro'"/>
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+    <rosparam param="source_list">["rviz_command"]</rosparam>
+    <rosparam param="rate">20</rosparam>
+  </node>
+  <!-- Map server -->
+  <arg name="map_file" default="$(find inmoov_navigation)/maps/firstfloor.yaml"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
+  <!-- Place map frame at odometry frame -->
+  <node pkg="tf" type="static_transform_publisher" name="map_odom_broadcaster"
+      args="0 0 0 0 0 0 map odom 100"/>
+
+  <node pkg="tf" type="static_transform_publisher" name="map_chassis_broadcaster"
+      args="0 0 0 0 0 0 map chassis 100"/>
+
+
+</launch>
+
+

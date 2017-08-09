@@ -1,0 +1,8 @@
+prefix=/home/robot/inmoov_ros/install
+
+Name: moveit_planners_chomp
+Description: Description of moveit_planners_chomp
+Version: 0.9.7
+Cflags: -I/home/robot/inmoov_ros/install/include
+Libs: -L/home/robot/inmoov_ros/install/lib -lmoveit_planners_chomp
+Requires: roscpp moveit_core pluginlib

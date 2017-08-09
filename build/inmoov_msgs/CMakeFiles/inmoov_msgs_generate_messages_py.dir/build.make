@@ -53,46 +53,175 @@ CMAKE_BINARY_DIR = /home/robot/inmoov_ros/build
 # Include the progress variables for this target.
 include inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_py.dir/progress.make
 
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_NeoPixel.py
 inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_MotorCommand.py
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapFrame.py
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_Status.py
 inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_MotorStatus.py
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_NeoPixel_command.py
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapHand.py
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_ServoSetup.py
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapPointable.py
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapGesture.py
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_NeoPixelSetBrightness.py
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_inmoov_voice.py
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_RequestStatus.py
 inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_MotorParameter.py
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_RPS.py
+inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_inmoov_sound_play.py
 inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/__init__.py
 inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/__init__.py
 
 
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_NeoPixel.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_NeoPixel.py: /home/robot/inmoov_ros/src/inmoov_msgs/msg/NeoPixel.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG inmoov_msgs/NeoPixel"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/NeoPixel.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg
+
 /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_MotorCommand.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
 /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_MotorCommand.py: /home/robot/inmoov_ros/src/inmoov_msgs/msg/MotorCommand.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG inmoov_msgs/MotorCommand"
-	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/MotorCommand.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG inmoov_msgs/MotorCommand"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/MotorCommand.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg
+
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapFrame.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapFrame.py: /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapFrame.msg
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapFrame.py: /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapPointable.msg
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapFrame.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapFrame.py: /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapGesture.msg
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapFrame.py: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapFrame.py: /opt/ros/kinetic/share/geometry_msgs/msg/Vector3.msg
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapFrame.py: /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapHand.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG inmoov_msgs/LeapFrame"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapFrame.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg
+
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_Status.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_Status.py: /home/robot/inmoov_ros/src/inmoov_msgs/msg/Status.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG inmoov_msgs/Status"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/Status.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg
 
 /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_MotorStatus.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
 /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_MotorStatus.py: /home/robot/inmoov_ros/src/inmoov_msgs/msg/MotorStatus.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG inmoov_msgs/MotorStatus"
-	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/MotorStatus.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python from MSG inmoov_msgs/MotorStatus"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/MotorStatus.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg
+
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_NeoPixel_command.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_NeoPixel_command.py: /home/robot/inmoov_ros/src/inmoov_msgs/msg/NeoPixel_command.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python from MSG inmoov_msgs/NeoPixel_command"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/NeoPixel_command.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg
+
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapHand.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapHand.py: /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapHand.msg
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapHand.py: /opt/ros/kinetic/share/geometry_msgs/msg/Vector3.msg
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapHand.py: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Python from MSG inmoov_msgs/LeapHand"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapHand.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg
+
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_ServoSetup.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_ServoSetup.py: /home/robot/inmoov_ros/src/inmoov_msgs/msg/ServoSetup.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Python from MSG inmoov_msgs/ServoSetup"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/ServoSetup.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg
+
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapPointable.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapPointable.py: /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapPointable.msg
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapPointable.py: /opt/ros/kinetic/share/geometry_msgs/msg/Vector3.msg
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapPointable.py: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Python from MSG inmoov_msgs/LeapPointable"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapPointable.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg
+
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapGesture.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapGesture.py: /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapGesture.msg
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapGesture.py: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapGesture.py: /opt/ros/kinetic/share/geometry_msgs/msg/Vector3.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Python from MSG inmoov_msgs/LeapGesture"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/robot/inmoov_ros/src/inmoov_msgs/msg/LeapGesture.msg -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg
+
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_NeoPixelSetBrightness.py: /opt/ros/kinetic/lib/genpy/gensrv_py.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_NeoPixelSetBrightness.py: /home/robot/inmoov_ros/src/inmoov_msgs/srv/NeoPixelSetBrightness.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Python code from SRV inmoov_msgs/NeoPixelSetBrightness"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/robot/inmoov_ros/src/inmoov_msgs/srv/NeoPixelSetBrightness.srv -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv
+
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_inmoov_voice.py: /opt/ros/kinetic/lib/genpy/gensrv_py.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_inmoov_voice.py: /home/robot/inmoov_ros/src/inmoov_msgs/srv/inmoov_voice.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating Python code from SRV inmoov_msgs/inmoov_voice"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/robot/inmoov_ros/src/inmoov_msgs/srv/inmoov_voice.srv -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv
+
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_RequestStatus.py: /opt/ros/kinetic/lib/genpy/gensrv_py.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_RequestStatus.py: /home/robot/inmoov_ros/src/inmoov_msgs/srv/RequestStatus.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating Python code from SRV inmoov_msgs/RequestStatus"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/robot/inmoov_ros/src/inmoov_msgs/srv/RequestStatus.srv -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv
 
 /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_MotorParameter.py: /opt/ros/kinetic/lib/genpy/gensrv_py.py
 /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_MotorParameter.py: /home/robot/inmoov_ros/src/inmoov_msgs/srv/MotorParameter.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python code from SRV inmoov_msgs/MotorParameter"
-	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/robot/inmoov_ros/src/inmoov_msgs/srv/MotorParameter.srv -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating Python code from SRV inmoov_msgs/MotorParameter"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/robot/inmoov_ros/src/inmoov_msgs/srv/MotorParameter.srv -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv
+
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_RPS.py: /opt/ros/kinetic/lib/genpy/gensrv_py.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_RPS.py: /home/robot/inmoov_ros/src/inmoov_msgs/srv/RPS.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating Python code from SRV inmoov_msgs/RPS"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/robot/inmoov_ros/src/inmoov_msgs/srv/RPS.srv -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv
+
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_inmoov_sound_play.py: /opt/ros/kinetic/lib/genpy/gensrv_py.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_inmoov_sound_play.py: /home/robot/inmoov_ros/src/inmoov_msgs/srv/inmoov_sound_play.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating Python code from SRV inmoov_msgs/inmoov_sound_play"
+	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/robot/inmoov_ros/src/inmoov_msgs/srv/inmoov_sound_play.srv -Iinmoov_msgs:/home/robot/inmoov_ros/src/inmoov_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p inmoov_msgs -o /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv
 
 /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_NeoPixel.py
 /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_MotorCommand.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapFrame.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_Status.py
 /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_MotorStatus.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_NeoPixel_command.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapHand.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_ServoSetup.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapPointable.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapGesture.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_NeoPixelSetBrightness.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_inmoov_voice.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_RequestStatus.py
 /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_MotorParameter.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python msg __init__.py for inmoov_msgs"
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_RPS.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_inmoov_sound_play.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating Python msg __init__.py for inmoov_msgs"
 	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg --initpy
 
 /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_NeoPixel.py
 /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_MotorCommand.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapFrame.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_Status.py
 /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_MotorStatus.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_NeoPixel_command.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapHand.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_ServoSetup.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapPointable.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapGesture.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_NeoPixelSetBrightness.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_inmoov_voice.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_RequestStatus.py
 /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_MotorParameter.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python srv __init__.py for inmoov_msgs"
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_RPS.py
+/home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/__init__.py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_inmoov_sound_play.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/inmoov_ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating Python srv __init__.py for inmoov_msgs"
 	cd /home/robot/inmoov_ros/build/inmoov_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv --initpy
 
 inmoov_msgs_generate_messages_py: inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_py
+inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_NeoPixel.py
 inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_MotorCommand.py
+inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapFrame.py
+inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_Status.py
 inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_MotorStatus.py
+inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_NeoPixel_command.py
+inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapHand.py
+inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_ServoSetup.py
+inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapPointable.py
+inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/_LeapGesture.py
+inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_NeoPixelSetBrightness.py
+inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_inmoov_voice.py
+inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_RequestStatus.py
 inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_MotorParameter.py
+inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_RPS.py
+inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/_inmoov_sound_play.py
 inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/msg/__init__.py
 inmoov_msgs_generate_messages_py: /home/robot/inmoov_ros/devel/lib/python2.7/dist-packages/inmoov_msgs/srv/__init__.py
 inmoov_msgs_generate_messages_py: inmoov_msgs/CMakeFiles/inmoov_msgs_generate_messages_py.dir/build.make
